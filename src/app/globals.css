@@ -27,9 +27,16 @@ body {
 }
 
 .light {
-  color: white;
+  color: black;
+  background-color: white;
 }
 
 .dark {
+  color: white;
+  background-color: black;
+}
+
+.transparent {
   color: black;
+  background-color: #ffffff3f;
 }

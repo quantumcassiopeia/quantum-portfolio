@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+
 export default function Home() {
   return (
     <div>
@@ -7,7 +9,10 @@ export default function Home() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
           expedita facere harum quo.
         </h2>
-        <div>botões</div>
+        <div className="flex flex-wrap gap-4 mt-6">
+          <Button variant="dark">Get Started</Button>
+          <Button variant="transparent">Get Started</Button>
+        </div>
       </section>
     </div>
   );
