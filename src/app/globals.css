@@ -6,12 +6,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.125rem;
   background: var(--bg-color);
   color: var(--text-color);
 }
 
-/* Temas */
+/* Themes */
 
 .light {
   --text-color: #000000;
@@ -29,12 +28,29 @@ body {
   --button-text-color: #000000;
 }
 
-/* Backgrounds */
+/* Anmations */
 .bg-rainbow-gradient {
-  background: linear-gradient(to bottom right, #fff89a, #ff85ae, #9925ff);
+  background: linear-gradient(160deg, #fff89a, #ff85ae, #9925ff);
+  background-position: left;
+  background-size: 160%;
+  transition: background-position 0.5s ease-out;
 }
 
-.transparenta {
-  color: black;
-  background-color: #ffffff3f;
+.bg-rainbow-gradient:hover {
+  background-position: right;
+}
+
+.text-rainbow-gradient {
+  display: inline-block;
+  background: linear-gradient(155deg, #fff89a, #ff85ae, #9925ff);
+  background-size: 200%;
+  background-position: left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s ease-out;
+  cursor: pointer;
+}
+
+.text-rainbow-gradient:hover {
+  background-position: right;
 }

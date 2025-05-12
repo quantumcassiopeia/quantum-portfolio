@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
@@ -96,6 +97,11 @@ const StyledWrapper = styled.div`
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
 
   return (
     <StyledWrapper>
