@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
+import { Providers } from "./Providers";
+
 const switzerDefault = localFont({
   src: "../../public/fonts/switzer/Switzer-Medium.woff2",
 });
@@ -17,11 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body
         className={`${switzerDefault.className} antialiased max-w-screen-2xl self-center mx-auto`}
       >
-        {children}
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

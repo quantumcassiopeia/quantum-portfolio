@@ -3,23 +3,28 @@ import React from "react";
 type ButtonProps =
   | ({
       children: React.ReactNode;
-      variant?: "light" | "dark" | "transparent";
+      variant?: "theme" | "transparent";
       as?: "button";
     } & React.ButtonHTMLAttributes<HTMLButtonElement>)
   | ({
       children: React.ReactNode;
-      variant?: "light" | "dark" | "transparent";
+      variant?: "theme" | "transparent";
       as: "a";
     } & React.AnchorHTMLAttributes<HTMLAnchorElement>);
 
 export default function Button({
   children,
-  variant = "light",
+  variant = "theme",
   as = "button",
   ...props
 }: ButtonProps) {
   const baseStyle =
     "px-4 py-1.5 shadow-[0_3px_8px_rgba(0,0,0,0.24)] whitespace-nowrap rounded-4xl backdrop-blur-sm hover:cursor-pointer hover:scale-105 transition duration-300 ease-out";
+
+  const variantStyle =
+    variant === "transparent"
+      ? "bg-transparent text-black"
+      : "bg-[var(--button-bg-color)] text-[var(--button-text-color)]";
 
   if (as === "a") {
     return (
@@ -34,7 +39,7 @@ export default function Button({
 
   return (
     <button
-      className={`${baseStyle} ${variant}`}
+      className={`${baseStyle} ${variantStyle}`}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}

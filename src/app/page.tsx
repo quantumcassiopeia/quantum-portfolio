@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 export default function Home() {
   return (
@@ -10,9 +11,16 @@ export default function Home() {
           expedita facere harum quo.
         </h2>
         <div className="flex flex-wrap gap-4 mt-6">
-          <Button variant="dark">Get Started</Button>
-          <Button variant="transparent">Get Started</Button>
+          <Button variant="theme">Tema</Button>
+          <Button variant="transparent">Transparente</Button>
         </div>
+        <div className="text-[var(--text-color)] bg-[var(--bg-color)]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos incidunt
+          possimus aliquam, nemo cum blanditiis, culpa, aspernatur cupiditate
+          sed iusto animi ipsam! Rerum, commodi. Nobis dolore sunt cum nihil
+          beatae!
+        </div>
+        <ThemeSwitcher />
       </section>
     </div>
   );
