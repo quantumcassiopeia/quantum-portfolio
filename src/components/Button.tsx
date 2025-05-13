@@ -29,7 +29,7 @@ export default function Button({
   if (as === "a") {
     return (
       <a
-        className={`${baseStyle} ${variant}`}
+        className={`${baseStyle} ${variantStyle}`}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
