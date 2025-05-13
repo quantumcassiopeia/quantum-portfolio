@@ -11,13 +11,15 @@ interface AnimatedLottieProps {
   loop?: boolean;
   width?: string | number;
   speed?: number;
+  className?: string;
 }
 
 export default function AnimatedLottie({
   animationData,
   loop = true,
-  width = "30%",
+  width = "20rem",
   speed = 0.5,
+  className = "",
 }: AnimatedLottieProps) {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
 
@@ -32,6 +34,12 @@ export default function AnimatedLottie({
       lottieRef={lottieRef}
       animationData={animationData}
       loop={loop}
+      className={className}
+      onDOMLoaded={() => {
+        if (lottieRef.current) {
+          lottieRef.current.setSpeed(speed);
+        }
+      }}
       style={{ width }}
     />
   );

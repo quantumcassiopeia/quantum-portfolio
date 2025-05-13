@@ -13,7 +13,7 @@ body {
 /* Themes */
 
 .light {
-  --text-color: #000000;
+  --text-color: #4d4d4d;
   --bg-color: #ffffff;
 
   --button-bg-color: #000000;
@@ -21,7 +21,7 @@ body {
 }
 
 .dark {
-  --text-color: #ffffff;
+  --text-color: #dbdbdb;
   --bg-color: #1c1c1c;
 
   --button-bg-color: #ffffff;

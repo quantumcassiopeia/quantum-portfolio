@@ -1,12 +1,28 @@
 import Button from "@/components/Button";
+
+// Components
+
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import SocialMediaLinks from "../components/SocialMediaLinks";
+import AnimatedLottie from "../components/AnimatedLottie";
+
+// Animations
+
+import crossplatform from "../../public/animations/crossplatform.json";
+import fast from "../../public/animations/fast.json";
+import intuitive from "../../public/animations/intuitive.json";
+import search from "../../public/animations/search.json";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <SocialMediaLinks position="fixed" />
+
+      {/* Hero */}
+
       <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 rounded-4xl">
+        <ThemeSwitcher />
+
         <h1 className="text-6xl md:text-9xl text-black">Close every deal.</h1>
         <h2 className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
@@ -19,12 +35,44 @@ export default function Home() {
             Contato
           </Button>
         </div>
-
-        <ThemeSwitcher />
       </section>
-      <main className="flex justify-center items-center h-[40rem] bg-amber-100 ">
-        CONTEÚDO
-      </main>
-    </div>
+
+      {/* Advantages */}
+
+      <section className="flex flex-col items-center md:items-start flex-wrap sm:flex-row  justify-center gap-10 py-12 ">
+        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
+          <AnimatedLottie animationData={crossplatform} />
+          <h3 className="text-3xl">Cross-platform</h3>
+          <p>
+            Site totalmente responsivo. Perfeito em celulares, tablets e
+            computadores — com ótima experiência em qualquer dispositivo.
+          </p>
+        </div>
+        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
+          <AnimatedLottie animationData={fast} />
+          <h3 className="text-3xl">Carregamento rápido</h3>
+          <p>
+            Otimização de imagens, código limpo e uso das melhores práticas para
+            garantir velocidade e performance.
+          </p>
+        </div>
+        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
+          <AnimatedLottie animationData={intuitive} className="h-80" />
+          <h3 className="text-3xl">Foco em Navegação Intuitiva</h3>
+          <p>
+            Layouts claros e objetivos para que o usuário encontre o que precisa
+            com facilidade.
+          </p>
+        </div>
+        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
+          <AnimatedLottie animationData={search} className="h-80" />
+          <h3 className="text-3xl">SEO</h3>
+          <p>
+            Com Search Engine Optimization, a estrutura é pensada para ajudar
+            seu site a aparecer melhor nos resultados do Google.
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }

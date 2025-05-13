@@ -2,7 +2,7 @@ import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col min-h-64 bg-[var(--bg-color]] pt-10 px-4 mt-auto">
+    <footer className="flex flex-col min-h-64 bg-[var(--bg-color]] pt-10 px-4 mt-auto border-t border-[var(--base-text-color)] ">
       <div className="flex flex-col gap-4 md:flex-row justify-between leading-8 text-[var(--base-text-color)]">
         <section>
           <h3 className="text-rainbow-gradient">Home</h3>
@@ -29,7 +29,7 @@ export default function Footer() {
           <p>Belo Horizonte - MG</p>
         </section>
       </div>
-      <section className="opacity-25 flex justify-center items-center min-h-14 text-center mt-6 md:mt-auto  border-t border-[var(--base-text-color)]">
+      <section className="opacity-25 flex justify-center items-center min-h-14 text-center mt-6 md:mt-auto border-t border-[var(--base-text-color)]">
         © {new Date().getFullYear()} Quantum Soluções
       </section>
     </footer>
