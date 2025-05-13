@@ -15,8 +15,8 @@ export default function Home() {
         <div className="flex flex-wrap gap-4 mt-6">
           <Button variant="theme">Tema</Button>
           <Button variant="transparent">Transparente</Button>
-          <Button as="a" href="https://google.com" variant="theme">
-            Google
+          <Button as="a" href="/contact" variant="theme">
+            Contato
           </Button>
         </div>
 

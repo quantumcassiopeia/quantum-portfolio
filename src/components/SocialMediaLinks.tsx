@@ -22,7 +22,7 @@ export default function SocialMediaLinks({ position }: SocialMediaLinksProps) {
   return (
     <ul className={positionStyle}>
       <li>
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="/contact">
           <AttachEmail sx={fixed} />
         </a>
       </li>

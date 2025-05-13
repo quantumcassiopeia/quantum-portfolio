@@ -10,7 +10,10 @@ export default function Footer() {
           <p>Cases</p>
         </section>
         <section>
-          <h3 className="text-rainbow-gradient">Contato</h3>
+          <h3 className="text-rainbow-gradient">Fale conosco</h3>
+          <a href="/contact" className="block">
+            Enviar mensagem
+          </a>
           <p>(11) 1234-5678</p>
           <p>E-mail: 3m6v8@example.com</p>
         </section>

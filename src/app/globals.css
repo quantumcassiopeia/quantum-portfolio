@@ -48,7 +48,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s ease-out;
-  cursor: pointer;
 }
 
 .text-rainbow-gradient:hover {
