@@ -1,4 +1,7 @@
+"use client";
+
 import { LinkedIn, GitHub, WhatsApp, AttachEmail } from "@mui/icons-material";
+import { useState, useEffect } from "react";
 
 const fixed = {
   fontSize: "2.4rem",
@@ -15,6 +18,22 @@ type SocialMediaLinksProps = {
   position: "flex" | "fixed";
 };
 export default function SocialMediaLinks({ position }: SocialMediaLinksProps) {
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowContent(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  if (!showContent) return null;
+
   const positionStyle =
     position === "flex"
       ? "flex flex-wrap md:max-w-[8rem]"

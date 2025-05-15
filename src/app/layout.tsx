@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-import { Providers } from "./Providers";
-import Header from "@/layout/Header";
 import Footer from "@/layout/Footer";
+import Header from "@/layout/Header";
+import { Providers } from "./Providers";
 
 const switzerDefault = localFont({
   src: "../../public/fonts/switzer/Switzer-Medium.woff2",

@@ -79,6 +79,10 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <section className="flex h-[50rem] bg-amber-600 justify-center items-center">
+        CREATIVE CASES SECTION UNDER CONSTRUCTION
+      </section>
     </main>
   );
 }
