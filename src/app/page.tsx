@@ -1,10 +1,4 @@
-import Button from "@/components/Button";
-
-// Components
-
-import ThemeSwitcher from "../components/ThemeSwitcher";
-import SocialMediaLinks from "../components/SocialMediaLinks";
-import AnimatedLottie from "../components/AnimatedLottie";
+// React Config
 
 // Animations
 
@@ -13,21 +7,35 @@ import fast from "../../public/animations/fast.json";
 import intuitive from "../../public/animations/intuitive.json";
 import search from "../../public/animations/search.json";
 
+// Components
+import Button from "@/components/Button";
+import ThemeSwitcher from "../components/ThemeSwitcher";
+import SocialMediaLinks from "../components/SocialMediaLinks";
+import AnimatedLottie from "../components/AnimatedLottie";
+import TextAnimation from "@/components/TextAnimation";
+
+// Code
+
 export default function Home() {
   return (
     <main>
       <SocialMediaLinks position="fixed" />
+      <ThemeSwitcher />
 
       {/* Hero */}
 
-      <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 rounded-4xl">
-        <ThemeSwitcher />
+      <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 rounded-4xl overflow-x-hidden ">
+        <TextAnimation className="text-6xl md:text-9xl text-black">
+          Bem-vindo à Quantum
+        </TextAnimation>
 
-        <h1 className="text-6xl md:text-9xl text-black">Close every deal.</h1>
-        <h2 className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 ">
+        <TextAnimation
+          delay={1}
+          className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 "
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
           expedita facere harum quo.
-        </h2>
+        </TextAnimation>
         <div className="flex flex-wrap gap-4 mt-6">
           <Button variant="theme">Tema</Button>
           <Button variant="transparent">Transparente</Button>
