@@ -9,10 +9,9 @@ import search from "../../public/animations/search.json";
 
 // Components
 import Button from "@/components/Button";
-import ThemeSwitcher from "../components/ThemeSwitcher";
-import SocialMediaLinks from "../components/SocialMediaLinks";
-import AnimatedLottie from "../components/AnimatedLottie";
 import TextAnimation from "@/components/TextAnimation";
+import AnimatedLottie from "../components/AnimatedLottie";
+import SocialMediaLinks from "../components/SocialMediaLinks";
 
 // Code
 
@@ -20,11 +19,10 @@ export default function Home() {
   return (
     <main>
       <SocialMediaLinks position="fixed" />
-      <ThemeSwitcher />
 
       {/* Hero */}
 
-      <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 rounded-4xl overflow-x-hidden ">
+      <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
         <TextAnimation className="text-6xl md:text-9xl text-black">
           Bem-vindo à Quantum
         </TextAnimation>

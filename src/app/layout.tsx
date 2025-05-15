@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import { Providers } from "./Providers";
+import Header from "@/layout/Header";
 import Footer from "@/layout/Footer";
 
 const switzerDefault = localFont({
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${switzerDefault.className} antialiased flex flex-col md:text-[1.125rem] min-h-dvh max-w-screen-2xl self-center mx-auto`}
       >
         <Providers>
+          <Header />
           <main>{children}</main>
           <Footer />
         </Providers>

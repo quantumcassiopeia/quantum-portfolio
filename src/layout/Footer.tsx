@@ -1,20 +1,19 @@
 import SocialMediaLinks from "@/components/SocialMediaLinks";
+import Navbar from "@/components/Navbar";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col min-h-64 bg-[var(--bg-color]] pt-10 px-4 mt-auto border-t border-[var(--base-text-color)] ">
       <div className="flex flex-col gap-4 md:flex-row justify-between leading-8 text-[var(--base-text-color)]">
         <section>
-          <h3 className="text-rainbow-gradient">Home</h3>
-          <p>Sobre</p>
-          <p>Cases</p>
+          <Navbar showContact={false} />
         </section>
         <section>
           <h3 className="text-rainbow-gradient">Fale conosco</h3>
           <a href="/contact" className="block">
             Enviar mensagem
           </a>
-          <p>(11) 1234-5678</p>
+          <p>(91) 98566-9109</p>
           <p>E-mail: 3m6v8@example.com</p>
         </section>
         <section>

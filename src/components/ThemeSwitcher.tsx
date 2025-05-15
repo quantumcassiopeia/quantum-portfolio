@@ -104,7 +104,7 @@ export default function ThemeSwitcher() {
   if (!mounted) return null;
 
   return (
-    <StyledWrapper className="absolute top-4 right-4">
+    <StyledWrapper>
       <label className="ui-switch">
         <input
           type="checkbox"
