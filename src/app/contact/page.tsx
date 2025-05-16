@@ -1,11 +1,3 @@
-import Button from "@/components/Button";
-
 export default function ContactPage() {
-  return (
-    <div>
-      <Button as="a" href="/" variant="theme">
-        Home
-      </Button>
-    </div>
-  );
+  return <div className="flex mt-20 h-screen bg-amber-700">Contato</div>;
 }

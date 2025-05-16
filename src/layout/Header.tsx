@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,11 +45,11 @@ export default function Header() {
       <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto px-10  h-full">
         <div>ÍCONE</div>
         <div className="flex gap-10 items-center">
-          <ThemeSwitcher className="ml-auto" />
+          <ThemeSwitcher />
           {isDesktop ? (
             <Navbar className="flex gap-4" showHome={false} />
           ) : (
-            <div>MH</div>
+            <HamburgerMenu />
           )}
         </div>
       </div>
