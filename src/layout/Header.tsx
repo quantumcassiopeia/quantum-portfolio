@@ -8,14 +8,25 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleUpdateHeader = () => {
+      const isDesktop = window.innerWidth >= 768;
       const scrolled = window.scrollY > 0;
-      setIsScrolled((prev) => (prev !== scrolled ? scrolled : prev));
+
+      if (isDesktop) {
+        setIsScrolled(scrolled);
+      } else {
+        setIsScrolled(false);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleUpdateHeader);
+    window.addEventListener("resize", handleUpdateHeader);
+
+    handleUpdateHeader();
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleUpdateHeader);
+      window.removeEventListener("resize", handleUpdateHeader);
     };
   }, []);
 

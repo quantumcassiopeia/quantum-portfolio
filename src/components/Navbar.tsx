@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar({
   showContact = true,
-  showHome = false,
+  showHome = true,
   className = "",
 }: {
   showContact?: boolean;
