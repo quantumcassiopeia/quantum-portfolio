@@ -2,14 +2,16 @@ import Link from "next/link";
 
 export default function Navbar({
   showContact = true,
+  showHome = false,
   className = "",
 }: {
   showContact?: boolean;
+  showHome?: boolean;
   className?: string;
 }) {
   return (
     <ul className={className}>
-      <li className="text-rainbow-gradient">
+      <li className={showHome ? "text-rainbow-gradient" : "hidden"}>
         <Link href="/">Home</Link>
       </li>
       <li>
