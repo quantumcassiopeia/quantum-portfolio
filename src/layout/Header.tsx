@@ -6,27 +6,30 @@ import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    const handleUpdateHeader = () => {
-      const isDesktop = window.innerWidth >= 768;
+    const handleScroll = () => {
       const scrolled = window.scrollY > 0;
-
-      if (isDesktop) {
-        setIsScrolled(scrolled);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled((prev) => (prev !== scrolled ? scrolled : prev));
     };
 
-    window.addEventListener("scroll", handleUpdateHeader);
-    window.addEventListener("resize", handleUpdateHeader);
-
-    handleUpdateHeader();
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleUpdateHeader);
-      window.removeEventListener("resize", handleUpdateHeader);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const desktop = window.innerWidth > 768;
+      setIsDesktop((prev) => (prev !== desktop ? desktop : prev));
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -38,11 +41,15 @@ export default function Header() {
     <header
       className={`fixed h-20 left-0 right-0 top-0 z-50 transition-all duration-700 ease-in-out ${backgroundColor}`}
     >
-      <div className="flex items-center max-w-screen-2xl mx-auto px-10 justify-between h-full">
+      <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto px-10  h-full">
         <div>ÍCONE</div>
-        <div className="flex items-center gap-4">
-          <Navbar className="flex gap-4" showHome={false} />
-          <ThemeSwitcher />
+        <div className="flex gap-10 items-center">
+          <ThemeSwitcher className="ml-auto" />
+          {isDesktop ? (
+            <Navbar className="flex gap-4" showHome={false} />
+          ) : (
+            <div>MH</div>
+          )}
         </div>
       </div>
     </header>

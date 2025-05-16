@@ -95,7 +95,7 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default function ThemeSwitcher() {
+export default function ThemeSwitcher({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -104,7 +104,7 @@ export default function ThemeSwitcher() {
   if (!mounted) return null;
 
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       <label className="ui-switch">
         <input
           type="checkbox"

@@ -10,7 +10,7 @@ export default function Navbar({
   className?: string;
 }) {
   return (
-    <ul className={className}>
+    <ul className={`text-[var(--text-color)] ${className}`}>
       <li className={showHome ? "text-rainbow-gradient" : "hidden"}>
         <Link href="/">Home</Link>
       </li>
