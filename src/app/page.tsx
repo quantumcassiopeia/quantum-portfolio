@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
         <TextAnimation className="text-6xl md:text-9xl text-black">
-          Bem-vindo à Quantum
+          Loren ipsum dolor sit
         </TextAnimation>
 
         <TextAnimation

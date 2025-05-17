@@ -30,8 +30,8 @@ body {
 
 /* Anmations */
 .bg-rainbow-gradient {
-  background: linear-gradient(160deg, #fff89a, #ff85ae, #9925ff);
-  background-position: left;
+  background: linear-gradient(160deg, #9b28ff, #ff4784, #ff9dbe, #fff89a);
+  background-position: top;
   background-size: 160%;
   transition: background-position 0.5s ease-out;
 }
@@ -42,7 +42,7 @@ body {
 
 .text-rainbow-gradient {
   display: inline-block;
-  background: linear-gradient(155deg, #fff89a, #ff85ae, #9925ff);
+  background: linear-gradient(155deg, #9925ff, #ff85ae, #fff89a);
   background-size: 200%;
   background-position: left;
   -webkit-background-clip: text;

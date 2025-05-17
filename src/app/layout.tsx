@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${switzerDefault.className} antialiased flex flex-col md:text-[1.125rem] min-h-screen max-w-screen-2xl self-center mx-auto`}
+        className={`${switzerDefault.className} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-hidden min-h-screen max-w-screen-2xl self-center mx-auto`}
       >
         <Providers>
           <Header />
-          <main>{children}</main>
+          <main className="h-full">{children}</main>
           <Footer />
         </Providers>
       </body>

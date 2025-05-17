@@ -13,7 +13,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
   }, [isOpened]);
 
   const hamburgerLines =
-    "bg-black h-1 w-7 block rounded-full absolute transition duration-500 ease-in-out";
+    "bg-[var(--text-color)] h-1 w-7 block rounded-full absolute transition duration-500 ease-in-out";
 
   const hamburgerSpans = (
     <>
@@ -56,7 +56,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
           }
         `}
       >
-        <Navbar className="flex flex-col gap-4 relative top-10 left-5" />
+        <Navbar className="inline-flex flex-col gap-4 relative top-10 left-5" />
       </div>
     </div>
   );
