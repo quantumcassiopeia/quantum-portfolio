@@ -12,13 +12,37 @@ export default function HamburgerMenu({ className }: { className?: string }) {
     return () => document.removeEventListener("click", handleMouseClick);
   }, [isOpened]);
 
+  const hamburgerLines =
+    "bg-black h-1 w-7 block rounded-full absolute transition duration-500 ease-in-out";
+
+  const hamburgerSpans = (
+    <>
+      <span
+        className={`${
+          isOpened ? "translate-x-8 opacity-0" : ""
+        } ${hamburgerLines} top-2`}
+      ></span>
+      <span
+        className={`${isOpened ? "-rotate-45" : ""} ${hamburgerLines}`}
+      ></span>
+      <span
+        className={`${isOpened ? "rotate-45" : ""} ${hamburgerLines}`}
+      ></span>
+      <span
+        className={`${
+          isOpened ? "translate-x-8 opacity-0" : ""
+        } ${hamburgerLines} -top-2`}
+      ></span>
+    </>
+  );
+
   return (
     <div className={className}>
       <div
         onClick={() => setIsOpened((prev) => !prev)}
-        className="absolute z-50 top-7 right-5 cursor-pointer"
+        className="relative z-50  right-4 cursor-pointer"
       >
-        menu
+        {hamburgerSpans}
       </div>
 
       <div

@@ -40,7 +40,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed h-20 left-0 right-0 top-0 z-50 transition-all duration-700 ease-in-out ${backgroundColor}`}
+      className={`fixed h-16 md:h-20 left-0 right-0 top-0 z-50 transition-all duration-700 ease-in-out ${backgroundColor}`}
     >
       <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto px-10  h-full">
         <div>ÍCONE</div>
