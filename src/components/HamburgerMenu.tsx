@@ -8,12 +8,16 @@ export default function HamburgerMenu({ className }: { className?: string }) {
     const handleMouseClick = () => setIsOpened(false);
     if (isOpened === true) {
       document.addEventListener("click", handleMouseClick);
+      document.addEventListener("scroll", handleMouseClick);
     }
-    return () => document.removeEventListener("click", handleMouseClick);
+    return () => {
+      document.removeEventListener("click", handleMouseClick);
+      document.removeEventListener("scroll", handleMouseClick);
+    };
   }, [isOpened]);
 
   const hamburgerLines =
-    "bg-[var(--text-color)] h-1 w-7 block rounded-full absolute transition duration-500 ease-in-out";
+    "bg-[var(--text-color)] h-1 w-7 block rounded-full transition duration-500 ease-in-out";
 
   const hamburgerSpans = (
     <>
@@ -23,10 +27,10 @@ export default function HamburgerMenu({ className }: { className?: string }) {
         } ${hamburgerLines} top-2`}
       ></span>
       <span
-        className={`${isOpened ? "-rotate-45" : ""} ${hamburgerLines}`}
+        className={`${isOpened ? "-rotate-45" : ""} ${hamburgerLines} absolute`}
       ></span>
       <span
-        className={`${isOpened ? "rotate-45" : ""} ${hamburgerLines}`}
+        className={`${isOpened ? "rotate-45" : ""} ${hamburgerLines} absolute`}
       ></span>
       <span
         className={`${
@@ -40,14 +44,14 @@ export default function HamburgerMenu({ className }: { className?: string }) {
     <div className={className}>
       <div
         onClick={() => setIsOpened((prev) => !prev)}
-        className="relative z-50  right-4 cursor-pointer"
+        className="relative z-50  w-12 h-12 right-4 cursor-pointer flex flex-col justify-center items-center gap-3"
       >
         {hamburgerSpans}
       </div>
 
       <div
         className={`
-          fixed top-0 left-0 h-screen w-screen backdrop-blur-sm
+          fixed top-0 left-0 h-screen w-screen backdrop-blur-lg 
           transition-opacity duration-500 ease-in-out
           ${
             isOpened
@@ -56,7 +60,10 @@ export default function HamburgerMenu({ className }: { className?: string }) {
           }
         `}
       >
-        <Navbar className="inline-flex flex-col gap-4 relative top-10 left-5" />
+        <Navbar
+          className="inline-flex flex-col gap-4 relative top-10 left-5"
+          fontSize="text-2xl"
+        />
       </div>
     </div>
   );

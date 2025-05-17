@@ -41,7 +41,7 @@ export default function SocialMediaLinks({ position }: SocialMediaLinksProps) {
   const positionStyle =
     position === "flex"
       ? "flex flex-wrap md:max-w-[8rem]"
-      : "scale-75 fixed top-1/2 right-0 transform -translate-y-1/2 z-50 bg-white py-2 px-1 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)]";
+      : "scale-75 fixed top-1/2 right-0 transform -translate-y-1/2 z-40 bg-white py-2 px-1 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)]";
 
   return (
     <ul className={positionStyle}>

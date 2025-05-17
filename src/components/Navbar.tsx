@@ -1,17 +1,18 @@
 import Link from "next/link";
 
-const animations =
-  "hover:scale-105 hover:-translate-y-1 origin-left transition duration-500 ease-in-out";
+const animations = "hover:-translate-y-1 transition duration-500 ease-in-out";
 export default function Navbar({
   showContact = true,
   className = "",
+  fontSize = "",
 }: {
   showContact?: boolean;
   showHome?: boolean;
   className?: string;
+  fontSize?: string;
 }) {
   return (
-    <ul className={`text-[var(--text-color)] ${className}`}>
+    <ul className={`text-[var(--text-color)] ${className} ${fontSize} `}>
       <li className={animations}>
         <Link href="/">Home</Link>
       </li>
@@ -21,7 +22,7 @@ export default function Navbar({
       <li className={animations}>
         <Link href="/cases">Cases</Link>
       </li>
-      <li className={`${animations}  ${showContact ? "" : "hidden"}`}>
+      <li className={`${animations}  ${showContact ? "" : "hidden"} `}>
         <Link href="/contact">Contato</Link>
       </li>
     </ul>

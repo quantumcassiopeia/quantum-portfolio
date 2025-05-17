@@ -23,7 +23,7 @@ export default function Button({
 
   const variantStyle =
     variant === "transparent"
-      ? "bg-transparent text-black"
+      ? "bg-blur-lg text-black"
       : "bg-[var(--button-bg-color)] text-[var(--button-text-color)]";
 
   if (as === "a") {
