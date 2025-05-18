@@ -12,7 +12,9 @@ export default function Navbar({
   fontSize?: string;
 }) {
   return (
-    <ul className={`text-[var(--text-color)] ${className} ${fontSize} `}>
+    <ul
+      className={`text-[var(--text-color)] font-jetbrains-mono ${className} ${fontSize} `}
+    >
       <li className={animations}>
         <Link href="/">Home</Link>
       </li>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/layout/Footer";
@@ -9,6 +10,11 @@ import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 const switzerDefault = localFont({
   src: "../../public/fonts/switzer/Switzer-Medium.woff2",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--jetbrains-mono",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${switzerDefault.className} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-hidden min-h-screen max-w-screen-2xl self-center mx-auto`}
+        className={`${switzerDefault.className} ${jetBrainsMono.variable} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-hidden min-h-screen max-w-screen-2xl self-center mx-auto`}
       >
         <Providers>
           <SocialMediaLinks position="fixed" />

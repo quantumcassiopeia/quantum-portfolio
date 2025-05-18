@@ -10,6 +10,18 @@ body {
   color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-jetbrains-mono {
+  font-family: var(--jetbrains-mono);
+  word-spacing: -6px;
+  transform: scaleY(0.9);
+}
+
 /* Themes */
 
 .light {
