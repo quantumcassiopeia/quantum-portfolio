@@ -1,7 +1,7 @@
 "use client";
 
 import { LinkedIn, GitHub, WhatsApp, AttachEmail } from "@mui/icons-material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const iconStyle = {
   fontSize: "2.4rem",
@@ -14,37 +14,40 @@ const iconStyle = {
   transition: "all 0.3s ease-in-out",
 };
 
-type SocialMediaLinksProps = {
+export default function SocialMediaLinks({
+  position,
+}: {
   position: "flex" | "fixed";
-};
-
-export default function SocialMediaLinks({ position }: SocialMediaLinksProps) {
-  const [showContent, setShowContent] = useState(position === "flex");
+}) {
+  const [showContent, setShowContent] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    if (position === "flex") return;
-
     const handleScroll = () => {
-      setShowContent(window.scrollY > 300);
+      if (timerRef.current) clearTimeout(timerRef.current);
+      timerRef.current = setTimeout(() => {
+        setShowContent(false);
+      }, 2000);
+      setShowContent(true);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [position]);
-
-  if (!showContent) return null;
-
-  const positionStyle =
-    position === "flex"
-      ? "flex flex-wrap md:max-w-[8rem]"
-      : "scale-75 fixed top-1/2 right-0 transform -translate-y-1/2 z-40 bg-white py-2 px-1 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)]";
+  }, []);
 
   return (
-    <ul className={positionStyle}>
+    <ul
+      className={
+        position === "flex"
+          ? "flex flex-wrap md:max-w-[8rem]"
+          : showContent
+          ? "scale-75 fixed top-1/2 right-0 transform duration-300 ease-in-out -translate-y-1/2 z-40 bg-white py-2 px-1 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)]"
+          : " translate-x-[100%] scale-75 fixed top-1/2 right-0 transform duration-300 ease-in-out -translate-y-1/2 z-40 bg-white py-2 px-1 rounded-3xl shadow-[0_3px_8px_rgba(0,0,0,0.24)]"
+      }
+    >
       <li>
         <a href="/contact">
           <AttachEmail sx={iconStyle} />

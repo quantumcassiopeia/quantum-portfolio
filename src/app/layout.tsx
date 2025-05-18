@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import { Providers } from "./Providers";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 const switzerDefault = localFont({
   src: "../../public/fonts/switzer/Switzer-Medium.woff2",
@@ -26,6 +27,7 @@ export default function RootLayout({
         className={`${switzerDefault.className} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-hidden min-h-screen max-w-screen-2xl self-center mx-auto`}
       >
         <Providers>
+          <SocialMediaLinks position="fixed" />
           <Header />
           <main className="h-full">{children}</main>
           <Footer />

@@ -11,15 +11,12 @@ import search from "../../public/animations/search.json";
 import Button from "@/components/Button";
 import TextAnimation from "@/components/TextAnimation";
 import AnimatedLottie from "../components/AnimatedLottie";
-import SocialMediaLinks from "../components/SocialMediaLinks";
 
 // Code
 
 export default function Home() {
   return (
     <main>
-      <SocialMediaLinks position="fixed" />
-
       {/* Hero */}
 
       <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
