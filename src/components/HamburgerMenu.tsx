@@ -63,6 +63,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
         <Navbar
           className="inline-flex flex-col gap-4 relative top-10 left-5"
           fontSize="text-2xl"
+          showThemeSwitcher
         />
       </div>
     </div>

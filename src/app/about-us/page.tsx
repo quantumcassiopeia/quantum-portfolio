@@ -4,7 +4,7 @@ import team from "../../../public/animations/team.json";
 
 export default function AboutUsPage() {
   return (
-    <main className=" flex flex-col mx-auto gap-y-6 max-w-3xl mt-20 p-4">
+    <main className=" flex flex-col mx-auto gap-y-6 max-w-3xl mt-20 p-4 pb-28">
       <section className="flex flex-col items-center">
         <AnimatedLottie animationData={team} />
         <h1 className="text-3xl font-bold mb-8 text-center ">
