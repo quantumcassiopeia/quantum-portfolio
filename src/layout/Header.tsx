@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import HamburgerMenu from "@/components/HamburgerMenu";
+import Navbar from "@/components/Navbar";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +56,6 @@ export default function Header() {
       <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto md:pr-4 h-full">
         <div>ÍCONE</div>
         <div className="flex gap-5 items-center">
-          <ThemeSwitcher />
           {isDesktop ? (
             <Navbar className="flex gap-4" showHome={false} />
           ) : (

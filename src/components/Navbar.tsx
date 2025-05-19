@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const animations = "hover:-translate-y-1 transition duration-500 ease-in-out";
 export default function Navbar({
@@ -26,6 +27,9 @@ export default function Navbar({
       </li>
       <li className={`${animations}  ${showContact ? "" : "hidden"} `}>
         <Link href="/contact">Contato</Link>
+      </li>
+      <li className="scale-y-110 relative top-1">
+        <ThemeSwitcher />
       </li>
     </ul>
   );

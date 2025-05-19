@@ -28,8 +28,7 @@ export default function Home() {
           delay={1}
           className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 "
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
-          expedita facere harum quo.
+          Soluções inteligentes para o seu negócio
         </TextAnimation>
         <div className="flex flex-wrap gap-4 mt-6">
           <Button variant="theme">Tema</Button>

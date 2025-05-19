@@ -42,9 +42,9 @@ h6,
 
 /* Anmations */
 .bg-rainbow-gradient {
-  background: linear-gradient(160deg, #9b28ff, #ff4784, #ff9dbe, #fff89a);
-  background-position: top;
-  background-size: 160%;
+  background: linear-gradient(155deg, #fff89a, #ff9bbd, #9925ff);
+  background-position: left;
+  background-size: 150%;
   transition: background-position 0.5s ease-out;
 }
 
