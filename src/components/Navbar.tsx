@@ -6,9 +6,11 @@ export default function Navbar({
   showContact = true,
   className = "",
   fontSize = "",
+  showThemeSwitcher = false,
 }: {
   showContact?: boolean;
   showHome?: boolean;
+  showThemeSwitcher?: boolean;
   className?: string;
   fontSize?: string;
 }) {
@@ -28,9 +30,11 @@ export default function Navbar({
       <li className={`${animations}  ${showContact ? "" : "hidden"} `}>
         <Link href="/contact">Contato</Link>
       </li>
-      <li className="scale-y-110 relative top-1">
-        <ThemeSwitcher />
-      </li>
+      {showThemeSwitcher && (
+        <li className="scale-y-110 relative top-1">
+          <ThemeSwitcher />
+        </li>
+      )}
     </ul>
   );
 }

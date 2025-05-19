@@ -57,7 +57,7 @@ export default function Header() {
         <div>ÍCONE</div>
         <div className="flex gap-5 items-center">
           {isDesktop ? (
-            <Navbar className="flex gap-4" showHome={false} />
+            <Navbar className="flex gap-4" showHome={false} showThemeSwitcher />
           ) : (
             <HamburgerMenu />
           )}

@@ -11,12 +11,13 @@ import search from "../../public/animations/search.json";
 import Button from "@/components/Button";
 import TextAnimation from "@/components/TextAnimation";
 import AnimatedLottie from "../components/AnimatedLottie";
+import CardCreativeCases from "@/components/CardCreativeCases";
 
 // Code
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-28">
       {/* Hero */}
 
       <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
@@ -76,8 +77,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex h-[50rem] bg-amber-600 justify-center items-center">
-        CREATIVE CASES SECTION UNDER CONSTRUCTION
+      {/* Creative Cases */}
+
+      <section className="justify-center items-center">
+        <h2 className="text-4xl leading-30 text-center  ">Cases criativos</h2>
+        <div className="flex flex-wrap gap-4 justify-center items-center">
+          <CardCreativeCases
+            title="Portifólio"
+            image="/cases/1/case1.png"
+            description="Criação de portifólio com animações e efeito parallax."
+          />
+        </div>
       </section>
     </main>
   );
