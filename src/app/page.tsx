@@ -8,7 +8,6 @@ import intuitive from "../../public/animations/intuitive.json";
 import search from "../../public/animations/search.json";
 
 // Components
-import Button from "@/components/Button";
 import TextAnimation from "@/components/TextAnimation";
 import AnimatedLottie from "../components/AnimatedLottie";
 import CardCreativeCases from "@/components/CardCreativeCases";
@@ -31,13 +30,6 @@ export default function Home() {
         >
           Soluções inteligentes para o seu negócio
         </TextAnimation>
-        <div className="flex flex-wrap gap-4 mt-6">
-          <Button variant="theme">Tema</Button>
-          <Button variant="transparent">Transparente</Button>
-          <Button as="a" href="/contact" variant="theme">
-            Contato
-          </Button>
-        </div>
       </section>
 
       {/* Advantages */}
