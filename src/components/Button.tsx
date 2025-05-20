@@ -14,6 +14,7 @@ type ButtonProps =
 
 export default function Button({
   children,
+  className,
   variant = "theme",
   as = "button",
   ...props
@@ -29,7 +30,7 @@ export default function Button({
   if (as === "a") {
     return (
       <a
-        className={`${baseStyle} ${variantStyle}`}
+        className={`${baseStyle} ${variantStyle} ${className}`}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
@@ -39,7 +40,7 @@ export default function Button({
 
   return (
     <button
-      className={`${baseStyle} ${variantStyle}`}
+      className={`${baseStyle} ${variantStyle} ${className}`}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
     >
       {children}
