@@ -9,7 +9,7 @@ import search from "../../public/animations/search.json";
 
 // Components
 import TextAnimation from "@/components/TextAnimation";
-import AnimatedLottie from "../components/AnimatedLottie";
+import CardAdvantages from "@/components/CardAdvantages";
 import CardCreativeCases from "@/components/CardCreativeCases";
 
 // Code
@@ -34,39 +34,31 @@ export default function Home() {
 
       {/* Advantages */}
 
-      <section className="flex flex-col items-center md:items-start flex-wrap sm:flex-row  justify-center gap-10 py-12 ">
-        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
-          <AnimatedLottie animationData={crossplatform} />
-          <h3 className="text-3xl">Cross-platform</h3>
-          <p>
-            Site totalmente responsivo. Perfeito em celulares, tablets e
-            computadores — com ótima experiência em qualquer dispositivo.
-          </p>
-        </div>
-        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
-          <AnimatedLottie animationData={fast} />
-          <h3 className="text-3xl">Carregamento rápido</h3>
-          <p>
-            Otimização de imagens, código limpo e uso das melhores práticas para
-            garantir velocidade e performance.
-          </p>
-        </div>
-        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
-          <AnimatedLottie animationData={intuitive} className="h-80" />
-          <h3 className="text-3xl">Foco em Navegação Intuitiva</h3>
-          <p>
-            Layouts claros e objetivos para que o usuário encontre o que precisa
-            com facilidade.
-          </p>
-        </div>
-        <div className="flex flex-col items-center gap-4 max-w-[20rem] ">
-          <AnimatedLottie animationData={search} className="h-80" />
-          <h3 className="text-3xl">SEO</h3>
-          <p>
-            Com Search Engine Optimization, a estrutura é pensada para ajudar
-            seu site a aparecer melhor nos resultados do Google.
-          </p>
-        </div>
+      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8">
+        <CardAdvantages
+          title="Cross-platform"
+          description="Uma experiência fluida em qualquer dispositivo — do celular ao
+            desktop."
+          animation={crossplatform}
+        />
+        <CardAdvantages
+          title="Carregamento rápido"
+          description="Imagens otimizadas, código limpo e as melhores práticas para
+            garantir velocidade e performance."
+          animation={fast}
+        />
+        <CardAdvantages
+          title="Cross-platform"
+          description="Design limpo e intuitivo para que o usuário encontre o que precisa
+            com facilidade."
+          animation={intuitive}
+        />
+        <CardAdvantages
+          title="Cross-platform"
+          description="SEO estratégico para que seu site se destaque nos mecanismos de
+            busca."
+          animation={search}
+        />
       </section>
 
       {/* Creative Cases */}

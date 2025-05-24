@@ -10,7 +10,7 @@ export default function AboutUsPage() {
         <h1 className="text-3xl font-bold mb-8 text-center ">
           Sobre a Quantum Soluções
         </h1>
-        <p className=" leading-8 md:text-justify">
+        <p className="leading-8 md:text-justify">
           A Quantum é uma empresa fundada em 2025 por{" "}
           <a
             href="https://www.linkedin.com/in/robert-rsouza/"
@@ -18,35 +18,40 @@ export default function AboutUsPage() {
             target="_blank"
           >
             Robert Souza
-          </a>{" "}
-          com o propósito de criar sites modernos, responsivos e focados na
+          </a>
+          , com o propósito de criar sites modernos, responsivos e centrados na
           experiência do usuário. Atua no desenvolvimento de soluções digitais
-          personalizadas, aliando design, performance e usabilidade. A missão é
-          entregar sites que representem bem cada cliente, com qualidade,
-          clareza e atenção aos detalhes. Cada projeto é tratado de forma única,
-          com foco em resultados reais e comunicação eficiente.
+          personalizadas, unindo design, performance e usabilidade.
+        </p>
+        <br />
+        <p className="leading-8 md:text-justify">
+          Nossa missão é entregar sites que representem cada cliente com
+          qualidade, clareza e atenção aos detalhes. Cada projeto é tratado de
+          forma única, com foco em resultados reais e comunicação eficiente.
         </p>
       </section>
 
       <section>
-        Acesse mais informações sobre o criador da Quantum no currículo
-        disponível em{" "}
-        <a
-          className="text-rainbow-gradient"
-          href="./pdfs/curriculo.pdf"
-          target="_blank"
-        >
-          Português
-        </a>{" "}
-        |{" "}
-        <a
-          className="text-rainbow-gradient"
-          href="./pdfs/resume.pdf"
-          target="_blank"
-        >
-          English
-        </a>
-        .
+        <p className="leading-8 md:text-justify">
+          Saiba mais sobre o criador da Quantum acessando o currículo disponível
+          nas versões{" "}
+          <a
+            className="text-rainbow-gradient"
+            href="./pdfs/curriculo.pdf"
+            target="_blank"
+          >
+            Português
+          </a>{" "}
+          |{" "}
+          <a
+            className="text-rainbow-gradient"
+            href="./pdfs/resume.pdf"
+            target="_blank"
+          >
+            English
+          </a>
+          .
+        </p>
       </section>
     </main>
   );
