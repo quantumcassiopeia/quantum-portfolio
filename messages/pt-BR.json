@@ -19,13 +19,22 @@
       "Card4": {
         "title": "SEO",
         "description": "SEO estratégico para que seu site se destaque nos mecanismos de busca."
-      },
-
-      "AboutUs": {
-        "title": "Sobre a Quantum Soluções",
-        "paragraph2": "Nossa missão é entregar sites que representem cada cliente com qualidade, clareza e atenção aos detalhes. Cada projeto é tratado de forma única, com foco em resultados reais e comunicação eficiente.",
-        "paragraph3": "Saiba mais sobre o criador da Quantum acessando o currículo disponível nas versões"
       }
+    },
+
+    "CreativeCases": {
+      "title": "Cases Criativos"
     }
+  },
+
+  "AboutUs": {
+    "title": "Sobre a Quantum Soluções",
+    "paragraph2": "Nossa missão é entregar sites que representem cada cliente com qualidade, clareza e atenção aos detalhes. Cada projeto é tratado de forma única, com foco em resultados reais e comunicação eficiente.",
+    "paragraph3": "Saiba mais sobre o criador da Quantum acessando o currículo disponível nas versões"
+  },
+
+  "Contact": {
+    "title": "Contato",
+    "paragraph": "Orçamentos, dúvidas, elogios ou sugestões? Deixe sua mensagem no formulário abaixo ou entre em contato por um de nossos canais de atendimento no rodapé da página."
   }
 }

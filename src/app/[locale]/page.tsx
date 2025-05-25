@@ -63,7 +63,9 @@ export default function Home() {
       {/* Creative Cases */}
 
       <section className="justify-center items-center">
-        <h2 className="text-4xl leading-30 text-center  ">Cases criativos</h2>
+        <h2 className="text-4xl leading-30 text-center  ">
+          {t("CreativeCases.title")}
+        </h2>
         <div className="flex flex-wrap gap-4 justify-center items-center">
           <CardCreativeCases
             title="Portifólio"
