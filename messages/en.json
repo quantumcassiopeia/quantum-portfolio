@@ -23,7 +23,25 @@
     },
 
     "CreativeCases": {
-      "title": "Creative Cases"
+      "title": "Creative Cases",
+      "cards": {
+        "case1": {
+          "title": "Portfolio",
+          "description": "Elegant and responsive portfolio for showcasing projects."
+        },
+        "case2": {
+          "title": "Fitness",
+          "description": "Platform focused on physical exercise and well-being."
+        },
+        "case3": {
+          "title": "Education",
+          "description": "Video lessons and educational materials for students and teachers."
+        },
+        "case4": {
+          "title": "E-commerce",
+          "description": "Lightweight and functional e-commerce site focused on product display, usability, and performance."
+        }
+      }
     }
   },
 
@@ -40,6 +58,12 @@
   "Contact": {
     "title": "Contact",
     "paragraph": "Quotes, questions, compliments, or suggestions? Leave your message in the form below or reach out through one of our support channels in the page footer."
+  },
+
+  "Footer": {
+    "contactUs": "Contact Us",
+    "sendmessage": "Send a message",
+    "socialmedia": "Social Media"
   },
 
   "Form": {
@@ -63,6 +87,13 @@
       "suggestion": "Suggestion"
     },
     "button": "Send"
+  },
+
+  "Navbar": {
+    "home": "Home",
+    "about": "About us",
+    "cases": "Cases",
+    "contact": "Contact us"
   },
 
   "UnderMaintenance": {

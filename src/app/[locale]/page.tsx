@@ -62,15 +62,34 @@ export default function Home() {
 
       {/* Creative Cases */}
 
-      <section className="justify-center items-center">
+      <section className="flex flex-col justify-center px-4 ">
         <h2 className="text-4xl leading-30 text-center  ">
           {t("CreativeCases.title")}
         </h2>
-        <div className="flex flex-wrap gap-4 justify-center items-center">
+        <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
           <CardCreativeCases
-            title="Portifólio"
+            href="/cases/1"
+            title={t("CreativeCases.cards.case1.title")}
             image="/cases/1/case1.png"
-            description="Criação de portifólio com animações e efeito parallax."
+            description={t("CreativeCases.cards.case1.description")}
+          />
+          <CardCreativeCases
+            href="/cases/2"
+            title={t("CreativeCases.cards.case2.title")}
+            image="/cases/2/case2.png"
+            description={t("CreativeCases.cards.case2.description")}
+          />
+          <CardCreativeCases
+            href="/cases/3"
+            title={t("CreativeCases.cards.case3.title")}
+            image="/cases/3/case3.png"
+            description={t("CreativeCases.cards.case3.description")}
+          />
+          <CardCreativeCases
+            href="/cases/4"
+            title={t("CreativeCases.cards.case4.title")}
+            image="/cases/4/case4.png"
+            description={t("CreativeCases.cards.case4.description")}
           />
         </div>
       </section>

@@ -23,7 +23,25 @@
     },
 
     "CreativeCases": {
-      "title": "Cases Criativos"
+      "title": "Cases Criativos",
+      "cards": {
+        "case1": {
+          "title": "Portifólio",
+          "description": "Portifólio elegante e responsivo para apresentação de cases."
+        },
+        "case2": {
+          "title": "Fitness",
+          "description": "Plataforma focada em exercícios físicos e bem-estar."
+        },
+        "case3": {
+          "title": "Educação",
+          "description": "Videoaulas e materiais educativos para estudantes e professores."
+        },
+        "case4": {
+          "title": "e-commerce",
+          "description": "Site e-commerce leve e funcional, com foco na exibição de produtos, usabilidade e performance."
+        }
+      }
     }
   },
 
@@ -40,6 +58,12 @@
   "Contact": {
     "title": "Contato",
     "paragraph": "Orçamentos, dúvidas, elogios ou sugestões? Deixe sua mensagem no formulário abaixo ou entre em contato por um de nossos canais de atendimento no rodapé da página."
+  },
+
+  "Footer": {
+    "contactUs": "Fale conosco",
+    "sendmessage": "Envie uma mensagem",
+    "socialmedia": "Redes Sociais"
   },
 
   "Form": {
@@ -63,6 +87,13 @@
       "suggestion": "Sugestão"
     },
     "button": "Enviar"
+  },
+
+  "Navbar": {
+    "home": "Home",
+    "about": "Sobre",
+    "cases": "Cases",
+    "contact": "Contato"
   },
 
   "UnderMaintenance": {

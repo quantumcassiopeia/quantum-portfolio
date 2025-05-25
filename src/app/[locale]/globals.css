@@ -58,16 +58,17 @@ h6,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.bg-orange-gradient {
-  background: linear-gradient(155deg, #ffa62e, #ea4d2c);
+.bg-multicolor {
+  background: linear-gradient(200deg, #fff89a, #ff9bbd, #9925ff);
 }
 
 /* Anmations */
+
 .bg-rainbow-gradient {
   background: linear-gradient(155deg, #fff89a, #ff9bbd, #9925ff);
   background-position: left;
   background-size: 150%;
-  transition: background-position 0.5s ease-out;
+  transition: background-position 0.7s ease-in-out;
 }
 
 .bg-rainbow-gradient:hover {
