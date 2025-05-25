@@ -2,6 +2,7 @@
 
 import { LinkedIn, GitHub, WhatsApp, AttachEmail } from "@mui/icons-material";
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 const iconStyle = {
   fontSize: "2.4rem",
@@ -49,9 +50,9 @@ export default function SocialMediaLinks({
       }
     >
       <li>
-        <a href="/contact">
+        <Link href="/contact">
           <AttachEmail sx={iconStyle} />
-        </a>
+        </Link>
       </li>
       <li>
         <a href="https://wa.me/5591985669109" target="_blank" rel="noreferrer">
