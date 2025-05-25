@@ -13,7 +13,7 @@ export default function AboutUsPage() {
         <AnimatedLottie animationData={team} />
         <h1 className="text-3xl font-bold mb-8 text-center ">{t("title")}</h1>
         <p className="leading-8 md:text-justify">
-          A Quantum é uma empresa fundada em 2025 por{" "}
+          {t("paragraph1.beforeLink")}{" "}
           <a
             href="https://www.linkedin.com/in/robert-rsouza/"
             className="text-rainbow-gradient"
@@ -21,9 +21,7 @@ export default function AboutUsPage() {
           >
             Robert Souza
           </a>
-          , com o propósito de criar sites modernos, responsivos e centrados na
-          experiência do usuário. Atua no desenvolvimento de soluções digitais
-          personalizadas, unindo design, performance e usabilidade.
+          {t("paragraph1.afterLink")}
         </p>
         <br />
         <p className="leading-8 md:text-justify">{t("paragraph2")}</p>

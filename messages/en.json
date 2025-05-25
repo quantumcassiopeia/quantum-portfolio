@@ -29,6 +29,10 @@
 
   "AboutUs": {
     "title": "About Quantum Solutions",
+    "paragraph1": {
+      "beforeLink": "Quantum is a company founded in 2025 by",
+      "afterLink": ", with the purpose of creating modern, responsive websites focused on user experience. It develops custom digital solutions by combining design, performance, and usability."
+    },
     "paragraph2": "Our mission is to deliver websites that represent each client with quality, clarity, and attention to detail. Each project is treated uniquely, focusing on real results and efficient communication.",
     "paragraph3": "Learn more about the creator of Quantum by accessing the resume available in the versions"
   },
@@ -36,5 +40,10 @@
   "Contact": {
     "title": "Contact",
     "paragraph": "Quotes, questions, compliments, or suggestions? Leave your message in the form below or reach out through one of our support channels in the page footer."
+  },
+
+  "UnderMaintenance": {
+    "paragraph1": "We're working on it.",
+    "paragraph2": "Check back later!"
   }
 }
