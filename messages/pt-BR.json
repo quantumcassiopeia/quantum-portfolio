@@ -42,6 +42,29 @@
     "paragraph": "Orçamentos, dúvidas, elogios ou sugestões? Deixe sua mensagem no formulário abaixo ou entre em contato por um de nossos canais de atendimento no rodapé da página."
   },
 
+  "Form": {
+    "label": {
+      "name": "Nome",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar"
+    },
+    "placeholder": {
+      "name": "Digite seu nome",
+      "email": "Digite seu e-mail",
+      "subject": "Selecione um assunto",
+      "message": "Digite sua mensagem"
+    },
+    "option": {
+      "quotation": "Orçamento",
+      "question": "Dúvida",
+      "compliment": "Elogio",
+      "suggestion": "Sugestão"
+    },
+    "button": "Enviar"
+  },
+
   "UnderMaintenance": {
     "paragraph1": "Estamos trabalhando nisso.",
     "paragraph2": "Volte outra hora!"

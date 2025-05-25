@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Button from "./Button";
 import AnimatedLottie from "./AnimatedLottie";
 
 import check from "../../public/animations/check.json";
 
 export default function Form() {
+  const t = useTranslations("Form");
+
   const [submit, setSubmit] = useState(false);
   const [formData, setFormData] = useState({
     "entry.988830522": "",
@@ -63,13 +66,13 @@ export default function Form() {
         >
           <div className="flex flex-col md:flex-row gap-4">
             <fieldset className="flex flex-col md:w-1/2 gap-2">
-              <label htmlFor="entry.988830522">Nome</label>
+              <label htmlFor="entry.988830522">{t("label.name")}</label>
               <input
                 id="entry.988830522"
                 type="text"
                 name="entry.988830522"
                 required
-                placeholder="Digite seu nome"
+                placeholder={t("placeholder.name")}
                 className="border-2 rounded-4xl p-3"
                 onChange={handleInputData("entry.988830522")}
                 value={formData["entry.988830522"]}
@@ -79,13 +82,13 @@ export default function Form() {
             </fieldset>
 
             <fieldset className="flex flex-col md:w-1/2 gap-2">
-              <label htmlFor="entry.2006082270">Email</label>
+              <label htmlFor="entry.2006082270">{t("label.email")}</label>
               <input
                 id="entry.2006082270"
                 type="email"
                 name="entry.2006082270"
                 required
-                placeholder="Digite seu email"
+                placeholder={t("placeholder.email")}
                 className="border-2 rounded-4xl p-3"
                 onChange={handleInputData("entry.2006082270")}
                 value={formData["entry.2006082270"]}
@@ -96,7 +99,7 @@ export default function Form() {
           </div>
 
           <fieldset className="flex flex-col gap-2">
-            <label htmlFor="entry.360444704">Assunto</label>
+            <label htmlFor="entry.360444704">{t("label.subject")}</label>
             <select
               id="entry.360444704"
               name="entry.360444704"
@@ -105,31 +108,31 @@ export default function Form() {
               onChange={handleInputData("entry.360444704")}
               value={formData["entry.360444704"]}
             >
-              <option className="bg-[var(--bg-color)]" value="">
-                Selecione um assunto
+              <option className="bg-[var(--bg-color)]" value="" disabled>
+                {t("placeholder.subject")}
               </option>
-              <option className="bg-[var(--bg-color)]" value="Orçamento">
-                Orçamento
+              <option className="bg-[var(--bg-color)]" value="quotation">
+                {t("option.quotation")}
               </option>
-              <option className="bg-[var(--bg-color)]" value="Dúvida">
-                Dúvida
+              <option className="bg-[var(--bg-color)]" value="question">
+                {t("option.question")}
               </option>
-              <option className="bg-[var(--bg-color)]" value="Elogio">
-                Elogio
+              <option className="bg-[var(--bg-color)]" value="compliment">
+                {t("option.compliment")}
               </option>
-              <option className="bg-[var(--bg-color)]" value="Sugestão">
-                Sugestão
+              <option className="bg-[var(--bg-color)]" value="suggestion">
+                {t("option.suggestion")}
               </option>
             </select>
           </fieldset>
 
           <fieldset className="flex flex-col gap-2">
-            <label htmlFor="entry.1308522209">Mensagem</label>
+            <label htmlFor="entry.1308522209">{t("label.message")}</label>
             <textarea
               id="entry.1308522209"
               name="entry.1308522209"
               required
-              placeholder="Digite sua mensagem"
+              placeholder={t("placeholder.message")}
               className="border-2 rounded-4xl p-3 min-h-[15rem]"
               onChange={handleInputData("entry.1308522209")}
               value={formData["entry.1308522209"]}
@@ -139,7 +142,7 @@ export default function Form() {
           </fieldset>
 
           <Button className="max-w-fit self-center" type="submit">
-            Enviar
+            {t("button")}
           </Button>
         </form>
       )}

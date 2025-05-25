@@ -42,6 +42,29 @@
     "paragraph": "Quotes, questions, compliments, or suggestions? Leave your message in the form below or reach out through one of our support channels in the page footer."
   },
 
+  "Form": {
+    "label": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "placeholder": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "subject": "Select a subject",
+      "message": "Enter your message"
+    },
+    "option": {
+      "quotation": "Quote",
+      "question": "Question",
+      "compliment": "Compliment",
+      "suggestion": "Suggestion"
+    },
+    "button": "Send"
+  },
+
   "UnderMaintenance": {
     "paragraph1": "We're working on it.",
     "paragraph2": "Check back later!"
