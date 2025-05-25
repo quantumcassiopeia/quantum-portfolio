@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Bem-vindo à Quantum Soluções",
+    "title": "Bem-vindo à Quantum.",
     "subtitle": "Soluções inteligentes para o seu negócio",
 
     "CardAdvantages": {
@@ -39,7 +39,7 @@
         },
         "case4": {
           "title": "e-commerce",
-          "description": "Site e-commerce leve e funcional, com foco na exibição de produtos, usabilidade e performance."
+          "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade."
         }
       }
     }

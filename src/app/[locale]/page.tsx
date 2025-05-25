@@ -23,7 +23,7 @@ export default function Home() {
     <main className="pb-28">
       {/* Hero */}
 
-      <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
+      <section className="flex flex-col gap-y-5 justify-center bg-rainbow-gradient min-h-[30rem] mx-1.5 mt-2.5 p-4 lg:pl-20  rounded-4xl overflow-x-hidden ">
         <TextAnimation className="text-6xl md:text-8xl text-black">
           {t("title")}
         </TextAnimation>

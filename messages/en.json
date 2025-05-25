@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "title": "Welcome to Quantum Solutions",
+    "title": "Welcome to Quantum.",
     "subtitle": "Innovative solutions for your business.",
 
     "CardAdvantages": {
@@ -39,7 +39,7 @@
         },
         "case4": {
           "title": "E-commerce",
-          "description": "Lightweight and functional e-commerce site focused on product display, usability, and performance."
+          "description": "Lightweight and functional e-commerce site focused on product display and usability."
         }
       }
     }
