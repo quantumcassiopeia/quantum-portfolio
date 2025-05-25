@@ -1,11 +1,13 @@
 // React Config
 
+import { useTranslations } from "next-intl";
+
 // Animations
 
-import crossplatform from "../../public/animations/crossplatform.json";
-import fast from "../../public/animations/fast.json";
-import intuitive from "../../public/animations/intuitive.json";
-import search from "../../public/animations/search.json";
+import crossplatform from "../../../public/animations/crossplatform.json";
+import fast from "../../../public/animations/fast.json";
+import intuitive from "../../../public/animations/intuitive.json";
+import search from "../../../public/animations/search.json";
 
 // Components
 import TextAnimation from "@/components/TextAnimation";
@@ -15,20 +17,21 @@ import CardCreativeCases from "@/components/CardCreativeCases";
 // Code
 
 export default function Home() {
+  const t = useTranslations("HomePage");
+
   return (
     <main className="pb-28">
       {/* Hero */}
 
       <section className="flex flex-col gap-6 justify-center bg-rainbow-gradient min-h-[595px] mx-1.5 mt-2.5 p-4 lg:pl-48 lg:pr-20 rounded-4xl overflow-x-hidden ">
-        <TextAnimation className="text-6xl md:text-9xl text-black">
-          Bem-vindo à Quantum.
+        <TextAnimation className="text-6xl md:text-8xl text-black">
+          {t("title")}
         </TextAnimation>
-
         <TextAnimation
           delay={1}
           className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 "
         >
-          Soluções inteligentes para o seu negócio
+          {t("subtitle")}
         </TextAnimation>
       </section>
 
@@ -36,27 +39,23 @@ export default function Home() {
 
       <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8">
         <CardAdvantages
-          title="Cross-platform"
-          description="Uma experiência fluida em qualquer dispositivo — do celular ao
-            desktop."
+          title={t("CardAdvantages.Card1.title")}
+          description={t("CardAdvantages.Card1.description")}
           animation={crossplatform}
         />
         <CardAdvantages
-          title="Carregamento rápido"
-          description="Imagens otimizadas, código limpo e as melhores práticas para
-            garantir velocidade e performance."
+          title={t("CardAdvantages.Card2.title")}
+          description={t("CardAdvantages.Card2.description")}
           animation={fast}
         />
         <CardAdvantages
-          title="Cross-platform"
-          description="Design limpo e intuitivo para que o usuário encontre o que precisa
-            com facilidade."
+          title={t("CardAdvantages.Card3.title")}
+          description={t("CardAdvantages.Card3.description")}
           animation={intuitive}
         />
         <CardAdvantages
-          title="Cross-platform"
-          description="SEO estratégico para que seu site se destaque nos mecanismos de
-            busca."
+          title={t("CardAdvantages.Card4.title")}
+          description={t("CardAdvantages.Card4.description")}
           animation={search}
         />
       </section>

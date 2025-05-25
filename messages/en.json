@@ -1,0 +1,30 @@
+{
+  "HomePage": {
+    "title": "Welcome to Quantum Solutions",
+    "subtitle": "Innovative solutions for your business.",
+
+    "CardAdvantages": {
+      "Card1": {
+        "title": "Cross-platform",
+        "description": "A seamless experience on any device — from mobile to desktop."
+      },
+      "Card2": {
+        "title": "Fast loading",
+        "description": "Optimized images, clean code, and best practices to ensure speed and performance."
+      },
+      "Card3": {
+        "title": "Intuitive navigation",
+        "description": "Clean and intuitive design so users can easily find what they need."
+      },
+      "Card4": {
+        "title": "SEO",
+        "description": "Strategic SEO to help your site stand out in search engines."
+      }
+    }
+  },
+  "AboutUs": {
+    "title": "About Quantum Solutions",
+    "paragraph2": "Our mission is to deliver websites that represent each client with quality, clarity, and attention to detail. Each project is treated uniquely, focusing on real results and efficient communication.",
+    "paragraph3": "Learn more about the creator of Quantum by accessing the resume available in the versions"
+  }
+}

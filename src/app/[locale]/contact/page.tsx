@@ -1,9 +1,13 @@
+import { useTranslations } from "next-intl";
+
 import AnimatedLottie from "@/components/AnimatedLottie";
 import Form from "@/components/Form";
 
-import contact from "../../../public/animations/contact.json";
+import contact from "../../../../public/animations/contact.json";
 
 export default function ContactPage() {
+  const t = useTranslations("Contact");
+
   return (
     <main className=" flex flex-col mx-auto max-w-3xl mt-20 p-4 pb-28">
       <section className="flex flex-col items-center gap-4 ">
