@@ -9,5 +9,4 @@ export const routing = defineRouting({
       "pt-BR": "/caminhos",
     },
   },
-  localePrefix: "as-needed",
 });
