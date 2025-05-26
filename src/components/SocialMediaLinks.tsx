@@ -2,7 +2,7 @@
 
 import { LinkedIn, GitHub, WhatsApp, AttachEmail } from "@mui/icons-material";
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 const iconStyle = {
   fontSize: "2.4rem",

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useTranslations } from "next-intl";
 
