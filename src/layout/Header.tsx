@@ -1,5 +1,6 @@
 "use client";
 
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
@@ -55,12 +56,20 @@ export default function Header() {
     >
       <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto md:pr-4 h-full">
         <div className="bg-lime-400 h-10 w-10 rounded-full  ml-4"></div>
-        <div className="flex gap-5 items-center">
-          {isDesktop ? (
-            <Navbar className="flex gap-4" showHome={false} showThemeSwitcher />
-          ) : (
-            <HamburgerMenu />
-          )}
+        <div className="flex items-center gap-x-3">
+          <LocaleSwitcher />
+
+          <div className="flex gap-5 items-center">
+            {isDesktop ? (
+              <Navbar
+                className="flex gap-4"
+                showHome={false}
+                showThemeSwitcher
+              />
+            ) : (
+              <HamburgerMenu />
+            )}
+          </div>
         </div>
       </div>
     </header>

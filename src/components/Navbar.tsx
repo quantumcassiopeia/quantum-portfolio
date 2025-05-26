@@ -1,7 +1,6 @@
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from "./LocaleSwitcher";
 
 const animations = "hover:-translate-y-1 transition duration-500 ease-in-out";
 export default function Navbar({
@@ -39,9 +38,6 @@ export default function Navbar({
           <ThemeSwitcher />
         </li>
       )}
-      <li>
-        <LocaleSwitcher />
-      </li>
     </ul>
   );
 }
