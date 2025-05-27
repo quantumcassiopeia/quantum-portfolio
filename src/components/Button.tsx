@@ -20,11 +20,11 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyle =
-    "px-4 py-1.5 shadow-[0_3px_8px_rgba(0,0,0,0.24)] whitespace-nowrap rounded-4xl backdrop-blur-sm hover:cursor-pointer hover:scale-105 transition duration-300 ease-out";
+    "cursor-pointer px-4 py-1.5 shadow-[0_3px_8px_rgba(0,0,0,0.24)] whitespace-nowrap rounded-4xl hover:scale-105 transition duration-500 ease-in-out";
 
   const variantStyle =
     variant === "transparent"
-      ? "bg-blur-lg text-black"
+      ? "bg-white/20 text-black"
       : "bg-[var(--bg-color-invert)] text-[var(--text-color-invert)]";
 
   if (as === "a") {

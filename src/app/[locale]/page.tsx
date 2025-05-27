@@ -13,6 +13,7 @@ import search from "../../../public/animations/search.json";
 import TextAnimation from "@/components/TextAnimation";
 import CardAdvantages from "@/components/CardAdvantages";
 import CardCreativeCases from "@/components/CardCreativeCases";
+import Button from "@/components/Button";
 
 // Code
 
@@ -33,6 +34,10 @@ export default function Home() {
         >
           {t("subtitle")}
         </TextAnimation>
+        <div>
+          <Button variant="transparent">transparente</Button>
+          <Button>tema</Button>
+        </div>
       </section>
 
       {/* Advantages */}
