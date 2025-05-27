@@ -51,7 +51,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
 
       <div
         className={`
-          fixed top-0 left-0 h-screen w-screen backdrop-blur-sm bg-[var(--bg-color)]/50
+          fixed top-0 left-0 h-screen w-screen backdrop-blur-sm bg-[var(--bg-color)]/30
           transition-opacity duration-500 ease-in-out
           ${
             isOpened

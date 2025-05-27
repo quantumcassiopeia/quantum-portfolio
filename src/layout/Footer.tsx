@@ -7,8 +7,8 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="flex flex-col min-h-64 bg-[var(--bg-color)] pt-10 px-4 mt-auto border-t border-[var(--base-text-color)] ">
-      <div className="flex flex-col gap-4 md:flex-row justify-between leading-8 text-[var(--base-text-color)]">
+    <footer className="flex flex-col min-h-64 bg-[var(--bg-color)] pt-10 px-4 mt-auto">
+      <div className="flex flex-col gap-4 md:flex-row justify-between leading-8 text-[var(--base-neutral-color)] pt-4 border-t border-[var(--base-neutral-color)]/25">
         <section>
           <Navbar showContact={false} />
         </section>
@@ -32,7 +32,7 @@ export default function Footer() {
           <p>Belo Horizonte - MG</p>
         </section>
       </div>
-      <section className="opacity-25 flex justify-center items-center min-h-14 text-center mt-6 md:mt-auto border-t border-[var(--base-text-color)]">
+      <section className="opacity-25 flex justify-center items-center min-h-14 text-center mt-6 md:mt-auto border-t border-[var(--base-neutral-color)]">
         © {new Date().getFullYear()} Quantum Soluções
       </section>
     </footer>
