@@ -28,7 +28,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Quamtum Solutions",
+  title: "Quantum Solutions",
   description: "Create intuitive digital experiences",
 };
 
