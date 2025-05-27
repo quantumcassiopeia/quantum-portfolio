@@ -2,7 +2,6 @@ import { Link } from "@/i18n/navigation";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useTranslations } from "next-intl";
 
-const animations = "hover:-translate-y-1 transition duration-500 ease-in-out";
 export default function Navbar({
   showContact = true,
   className = "",
@@ -15,6 +14,7 @@ export default function Navbar({
   className?: string;
   fontSize?: string;
 }) {
+  const animations = "hover:-translate-y-1 transition duration-500 ease-in-out";
   const t = useTranslations("Navbar");
 
   return (

@@ -86,7 +86,9 @@
       "compliment": "Elogio",
       "suggestion": "Sugestão"
     },
-    "button": "Enviar"
+    "button": "Enviar",
+    "success": "Mensagem enviada!",
+    "error": "Falha ao enviar a mensagem. Tente novamente."
   },
 
   "Navbar": {

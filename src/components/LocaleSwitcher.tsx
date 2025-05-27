@@ -11,10 +11,8 @@ export default function LocaleSwitcher() {
   const params = useParams();
 
   const handleLocaleChange = (locale: Locale) => {
-    // Copia os params para não modificar o original
     const restParams = { ...params };
-    delete restParams.locale; // remove o 'locale' para não duplicar na query
-
+    delete restParams.locale;
     router.replace(
       {
         pathname,
@@ -36,13 +34,13 @@ export default function LocaleSwitcher() {
       >
         <button
           onClick={() => handleLocaleChange("en")}
-          className="cursor-pointer focus:outline-none focus:ring focus:ring-blue-400"
+          className="cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
         >
           English
         </button>
         <button
           onClick={() => handleLocaleChange("pt-BR")}
-          className="cursor-pointer focus:outline-none focus:ring focus:ring-blue-400"
+          className="cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
         >
           Português
         </button>
