@@ -24,11 +24,11 @@ export default function Home() {
       {/* Hero */}
 
       <section className="flex flex-col gap-y-5 justify-center bg-rainbow-gradient min-h-[30rem] mx-1.5 mt-2.5 p-4 lg:pl-20  rounded-4xl overflow-x-hidden ">
-        <TextAnimation className="text-6xl md:text-8xl text-black">
+        <TextAnimation delay={0.5} className="text-6xl md:text-8xl text-black">
           {t("title")}
         </TextAnimation>
         <TextAnimation
-          delay={1}
+          delay={1.5}
           className="text-[1.25rem] md:text-2xl md:w-[32rem] text-gray-700 "
         >
           {t("subtitle")}
