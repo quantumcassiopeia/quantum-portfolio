@@ -74,19 +74,16 @@ export default function Home() {
             description={t("CreativeCases.cards.case1.description")}
           />
           <CardCreativeCases
-            href="/cases/2"
             title={t("CreativeCases.cards.case2.title")}
             image="/cases/2/case2.png"
             description={t("CreativeCases.cards.case2.description")}
           />
           <CardCreativeCases
-            href="/cases/3"
             title={t("CreativeCases.cards.case3.title")}
             image="/cases/3/case3.png"
             description={t("CreativeCases.cards.case3.description")}
           />
           <CardCreativeCases
-            href="/cases/4"
             title={t("CreativeCases.cards.case4.title")}
             image="/cases/4/case4.png"
             description={t("CreativeCases.cards.case4.description")}

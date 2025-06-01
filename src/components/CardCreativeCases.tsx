@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 
 export default function CardCreativeCases({
-  href,
+  href = "/cases",
   title,
   image,
   description,
 }: {
-  href: string;
+  href?: string;
   title: string;
   image: string | StaticImport;
   description: string;
@@ -18,7 +18,7 @@ export default function CardCreativeCases({
       href={href}
       className="bg-multicolor shadow-[var(--shadow)] cursor-pointer h-96 w-72 rounded-4xl p-[1px] transition duration-700 ease-in-out hover:translate-y-[-10px]"
     >
-      <div className="relative flex flex-col h-full w-full rounded-4xl overflow-hidden gap-y-[1px]">
+      <div className="relative flex flex-col h-full w-full rounded-4xl overflow-clip gap-y-[1px]">
         <div className="flex items-center h-2/3">
           <Image
             src={image}
