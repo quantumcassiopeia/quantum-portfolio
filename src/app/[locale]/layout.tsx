@@ -49,7 +49,6 @@ export default async function RootLayout({
         className={`${switzerDefault.className} ${jetBrainsMono.variable} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-clip min-h-screen max-w-screen-2xl self-center mx-auto`}
       >
         <NextIntlClientProvider>
-          {" "}
           <Providers>
             <SocialMediaLinks position="fixed" />
             <Header />

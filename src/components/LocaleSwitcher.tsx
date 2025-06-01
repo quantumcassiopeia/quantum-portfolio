@@ -34,13 +34,17 @@ export default function LocaleSwitcher() {
       >
         <button
           onClick={() => handleLocaleChange("en")}
-          className="cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+          className={`cursor-pointer w-full text-start focus:outline-none focus-visible:ring focus-visible:ring-blue-400 ${
+            params.locale === "en" ? "font-bold" : ""
+          }`}
         >
           English
         </button>
         <button
           onClick={() => handleLocaleChange("pt-BR")}
-          className="cursor-pointer focus:outline-none focus-visible:ring focus-visible:ring-blue-400"
+          className={`cursor-pointer w-full text-start focus:outline-none focus-visible:ring focus-visible:ring-blue-400 ${
+            params.locale === "pt-BR" ? "font-bold" : ""
+          }`}
         >
           Português
         </button>
