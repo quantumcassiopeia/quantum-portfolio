@@ -20,7 +20,7 @@ export default function CasesLayout() {
             alt={t(`${slugs}.title`)}
             fill
             priority
-            style={{ objectFit: "cover", opacity: 0.2 }}
+            className="object-cover opacity-20"
           />
         </div>
       </section>

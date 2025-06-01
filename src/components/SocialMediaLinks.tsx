@@ -28,7 +28,7 @@ export default function SocialMediaLinks({
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => {
         setShowContent(false);
-      }, 2000);
+      }, 1000);
       setShowContent(true);
     };
 
