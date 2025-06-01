@@ -9,28 +9,28 @@ export default function CasesLayout() {
   const t = useTranslations("cases");
 
   return (
-    <main className="mt-20 p-4">
-      <section className="relative">
+    <main className="mt-15 md:mt-20 mb-10">
+      <section className="relative base-shadow">
         <h1 className=" bg-white text-black p-3 rounded-2xl absolute z-10 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 text-2xl md:text-5xl">
           {t(`${slugs}.title`)}
         </h1>
-        <div className=" bg-black relative w-full h-50 md:h-[32rem] overflow-clip">
+        <div className=" bg-black relative w-full h-70 md:h-[32rem] overflow-clip">
           <Image
             src={`/cases/${slugs}/pageCover.jpeg`}
-            alt=""
+            alt={t(`${slugs}.title`)}
             fill
             priority
-            style={{ objectFit: "cover", opacity: 0.4 }}
+            style={{ objectFit: "cover", opacity: 0.2 }}
           />
         </div>
       </section>
-      <section className="flex flex-col gap-y-10 items-center md:items-start md:flex-row pt-10 md:pt-25 ">
+      <section className="flex flex-col gap-y-10 items-center md:items-start md:flex-row pt-10 md:pt-25 px-4">
         <div className="md:w-1/2 md:pr-8">
           <p className="leading-8">{t(`${slugs}.paragraph1`)}</p>
           <br />
-          <p>{t(`${slugs}.paragraph2`)}</p>
+          <p className="leading-8">{t(`${slugs}.paragraph2`)}</p>
         </div>
-        <div className="bg-black flex items-center w-full md:w-1/2  overflow-clip px-0.5 py-5">
+        <div className="bg-black flex items-center max-h-[30rem] w-full md:w-1/2 overflow-clip px-0.5 py-5 base-shadow">
           <video
             src={`/cases/${slugs}/video.webm`}
             autoPlay

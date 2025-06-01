@@ -63,7 +63,11 @@ h6,
   background: linear-gradient(200deg, #fff89a, #ff9bbd, #9925ff);
 }
 
-/* Anmations */
+.base-shadow {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+/* Animations */
 
 .bg-rainbow-gradient {
   background: linear-gradient(155deg, #fff89a, #ff9bbd, #9925ff);

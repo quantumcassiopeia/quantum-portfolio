@@ -106,7 +106,7 @@
     "1": {
       "title": "Portfolio",
       "paragraph1": "Designer Philip Greiner's portfolio, built using Next.js and Tailwind CSS. The site showcases a curated selection of his key projects within a clean, minimalist, and fully responsive layout. Navigation is smooth and intuitive, providing an enjoyable user experience across both mobile devices and desktops, with special attention to visual harmony and usability.",
-      "paragraph2": "The project is carefully optimized for high performance, fast loading times, and excellent user experience. It strictly follows best practices in accessibility and SEO, ensuring content is easily discoverable by search engines and accessible to all users. The codebase is modular and well-structured, making future maintenance, integrations, and scalability straightforward."
+      "paragraph2": "The project is optimized for high performance, fast loading times, and excellent user experience. It strictly follows best practices in accessibility and SEO, ensuring content is easily discoverable by search engines and accessible to all users. The codebase is modular and well-structured, making future maintenance, integrations, and scalability straightforward."
     }
   }
 }

@@ -9,7 +9,7 @@ export default function ContactPage() {
   const t = useTranslations("Contact");
 
   return (
-    <main className=" flex flex-col mx-auto max-w-3xl mt-20 p-4 pb-28">
+    <main className=" flex flex-col mx-auto max-w-3xl mt-15 md:mt-20 p-4 pb-28">
       <section className="flex flex-col items-center gap-4 ">
         <AnimatedLottie animationData={contact} speed={1.5} />
         <h1 className="text-3xl font-bold text-center ">{t("title")}</h1>
