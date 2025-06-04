@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 
-export default function HamburgerMenu({ className }: { className?: string }) {
+export default function HamburgerMenu({
+  className,
+  color,
+}: {
+  className?: string;
+  color: string;
+}) {
   const [isOpened, setIsOpened] = useState(false);
 
   useEffect(() => {
@@ -16,8 +22,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
     };
   }, [isOpened]);
 
-  const hamburgerLines =
-    "bg-[var(--text-color)] h-1 w-7 block rounded-full transition duration-500 ease-in-out";
+  const hamburgerLines = `bg-[${color}] h-1 w-7 block rounded-full transition duration-500 ease-in-out`;
 
   const hamburgerSpans = (
     <>
@@ -44,7 +49,7 @@ export default function HamburgerMenu({ className }: { className?: string }) {
     <div className={className}>
       <div
         onClick={() => setIsOpened((prev) => !prev)}
-        className="relative z-50  w-12 h-12 right-4 cursor-pointer flex flex-col justify-center items-center gap-3"
+        className="relative z-50  w-12 h-12 cursor-pointer flex flex-col justify-center items-center gap-3"
       >
         {hamburgerSpans}
       </div>

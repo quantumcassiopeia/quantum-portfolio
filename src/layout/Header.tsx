@@ -30,24 +30,19 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed shadow-md bg-[var(--bg-color)] h-16 md:h-20 left-0 right-0 top-0 z-50 transition-all duration-500 ease-in-out ${
+      className={`fixed shadow-md bg-[var(--bg-color)] left-0 w-full h-16 md:h-20 z-50 transition-all duration-500 ease-in-out ${
         isAtTop ? "bg-transparent shadow-none" : ""
       } ${isMobileHeaderHidden ? "-translate-y-full" : ""} md:-translate-y-0`}
     >
-      <div className="flex items-center justify-between max-w-screen-2xl w-full mx-auto md:pr-4 h-full">
-        <div className="h-10 w-10 rounded-full ml-4"></div>
-        <div className="flex items-center gap-x-3">
-          <LocaleSwitcher />
-
-          <div className="flex gap-5 items-center">
-            <Navbar
-              className="hidden md:flex gap-4"
-              showHome={false}
-              showThemeSwitcher
-            />
-            <HamburgerMenu className="md:hidden" />
-          </div>
-        </div>
+      <div className="flex items-center max-w-screen-2xl w-full h-full mx-auto px-4 ">
+        <div className="h-10 w-10 rounded-full bg-red-600 mr-auto"></div>
+        <LocaleSwitcher />
+        <Navbar
+          className="hidden md:flex gap-4"
+          showHome={false}
+          showThemeSwitcher
+        />
+        <HamburgerMenu className="md:hidden" color="var(--bg-color-invert)" />
       </div>
     </header>
   );

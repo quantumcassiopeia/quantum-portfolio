@@ -46,7 +46,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <body
-        className={`${switzerDefault.className} ${jetBrainsMono.variable} antialiased flex relative flex-col md:text-[1.125rem] overflow-x-clip min-h-screen max-w-screen-2xl self-center mx-auto`}
+        className={`${switzerDefault.className} ${jetBrainsMono.variable} antialiased relative flex flex-col overflow-x-clip h-screen max-w-screen-2xl mx-auto md:text-[1.125rem]`}
       >
         <NextIntlClientProvider>
           <Providers>
