@@ -35,7 +35,7 @@ export default function Header() {
       } ${isMobileHeaderHidden ? "-translate-y-full" : ""} md:-translate-y-0`}
     >
       <div className="flex items-center max-w-screen-2xl w-full h-full mx-auto px-4 ">
-        <div className="h-10 w-10 rounded-full bg-red-600 mr-auto"></div>
+        <div className="h-10 w-10 rounded-full mr-auto"></div>
         <LocaleSwitcher />
         <Navbar
           className="hidden md:flex gap-4"
