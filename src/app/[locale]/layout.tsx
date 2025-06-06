@@ -52,7 +52,7 @@ export default async function RootLayout({
           <Providers>
             <SocialMediaLinks position="fixed" />
             <Header />
-            <main className="h-full">{children}</main>
+            <main className="flex-1">{children}</main>
             <Footer />
           </Providers>
         </NextIntlClientProvider>
