@@ -32,7 +32,7 @@ export default function AboutUsPage() {
           {t("paragraph3")}{" "}
           <a
             className="text-rainbow-gradient"
-            href="./pdfs/curriculo.pdf"
+            href="/pdfs/curriculo.pdf"
             target="_blank"
           >
             Português
@@ -40,7 +40,7 @@ export default function AboutUsPage() {
           |{" "}
           <a
             className="text-rainbow-gradient"
-            href="./pdfs/resume.pdf"
+            href="/pdfs/resume.pdf"
             target="_blank"
           >
             English
