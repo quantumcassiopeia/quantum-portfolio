@@ -108,5 +108,11 @@
       "paragraph1": "Portfólio do designer Philip Greiner, desenvolvido com as tecnologias Next.js e Tailwind CSS. O site apresenta uma curadoria visual dos principais trabalhos do designer, distribuídos em um layout limpo, minimalista e totalmente responsivo. A navegação é fluida e intuitiva, garantindo uma experiência agradável tanto em dispositivos móveis quanto em desktops, com atenção especial à harmonia visual e usabilidade.",
       "paragraph2": "O projeto foi otimizado para oferecer alta performance, carregamento rápido e excelente experiência do usuário. Segue rigorosamente as melhores práticas de acessibilidade e SEO, garantindo que o conteúdo seja facilmente encontrado por mecanismos de busca e acessível a todos os públicos. A estrutura do código é modular e bem organizada, facilitando manutenções futuras, integrações e possível escalabilidade da aplicação."
     }
+  },
+  "NotFound": {
+    "title": "Error 404",
+    "subtitle": "Pagina não encontrada",
+    "paragraph": "Ei, você não deveria estar aqui! Clique no botão abaixo para voltar à página inicial.",
+    "button": "Página inicial"
   }
 }

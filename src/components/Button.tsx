@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "@/i18n/navigation";
 
 type ButtonProps =
   | ({
@@ -10,6 +11,7 @@ type ButtonProps =
       children: React.ReactNode;
       variant?: "theme" | "transparent";
       as: "a";
+      href: string;
     } & React.AnchorHTMLAttributes<HTMLAnchorElement>);
 
 export default function Button({
@@ -28,13 +30,19 @@ export default function Button({
       : "bg-[var(--bg-color-invert)] text-[var(--text-color-invert)]";
 
   if (as === "a") {
+    const { href, ...rest } =
+      props as React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+        href: string;
+      };
+
     return (
-      <a
+      <Link
+        href={href}
+        {...rest}
         className={`${baseStyle} ${variantStyle} ${className}`}
-        {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 
