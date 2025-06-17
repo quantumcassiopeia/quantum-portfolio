@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import dynamic from "next/dynamic";
 import { LottieRefCurrentProps } from "lottie-react";
 
@@ -22,12 +22,6 @@ export default function AnimatedLottie({
   className = "",
 }: AnimatedLottieProps) {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
-
-  useEffect(() => {
-    if (lottieRef.current) {
-      lottieRef.current.setSpeed(speed);
-    }
-  }, [speed]);
 
   return (
     <LottieClientSide
