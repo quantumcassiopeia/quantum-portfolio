@@ -46,6 +46,10 @@
       {
         "title": "SEO",
         "description": "Strategic SEO to help your site stand out in search engines."
+      },
+      {
+        "title": "Internationalization",
+        "description": "Support for multiple languages and regions, with automatic location detection."
       }
     ],
     "caseCards": [

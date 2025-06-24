@@ -4,7 +4,7 @@
     "subtitle": "Soluções inteligentes para o seu negócio",
 
     "CreativeCases": {
-      "title": "Creative Cases"
+      "title": "Cases Criativos"
     }
   },
 
@@ -40,12 +40,16 @@
       {
         "title": "SEO",
         "description": "SEO estratégico para que seu site se destaque nos mecanismos de busca."
+      },
+      {
+        "title": "Internacionalização",
+        "description": "Suporte a múltiplos idiomas e regiões, com detecção automática da localização do usuário."
       }
     ],
     "caseCards": [
       {
-        "title": "Portifólio",
-        "description": "Portifólio elegante e responsivo para apresentação de cases."
+        "title": "Portfólio",
+        "description": "Portfólio elegante e responsivo para apresentação de cases."
       },
       {
         "title": "Fitness",

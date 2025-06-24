@@ -2,15 +2,13 @@ import { useTranslations } from "next-intl";
 
 import AnimatedLottie from "@/components/AnimatedLottie";
 
-import team from "../../../../public/animations/team.json";
-
 export default function AboutUsPage() {
-  const t = useTranslations("AboutUs");
+  const t = useTranslations("AboutUsPage");
 
   return (
     <main className=" flex flex-col mx-auto gap-y-6 max-w-3xl mt-15 md:mt-20 p-4 pb-28">
       <section className="flex flex-col items-center">
-        <AnimatedLottie animationData={team} />
+        <AnimatedLottie src="/animations/team.json" />
         <h1 className="text-3xl font-bold mb-8 text-center ">{t("title")}</h1>
         <p className="leading-8 md:text-justify">
           {t("paragraph1.beforeLink")}{" "}

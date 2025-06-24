@@ -3,7 +3,6 @@ import AnimatedLottie from "@/components/AnimatedLottie";
 import Button from "@/components/Button";
 import Link from "next/link";
 
-import notfound from "../../../public/animations/404.json";
 export default function NotFound() {
   const t = useTranslations("NotFound");
 
@@ -11,7 +10,7 @@ export default function NotFound() {
     <main className="flex flex-col items-center justify-center w-full h-screen ">
       <h1 className="text-5xl">{t("title")}</h1>
       <h2 className="text-2xl">{t("subtitle")}</h2>
-      <AnimatedLottie animationData={notfound} />
+      <AnimatedLottie src="/animations/404.json" />
       <p className="text-center max-w-92">{t("paragraph")}</p>
       <Link href="/" className="text-center max-w-92">
         <Button className="mt-4">{t("button")}</Button>

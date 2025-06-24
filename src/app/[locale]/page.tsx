@@ -6,13 +6,18 @@ import { useTranslations } from "next-intl";
 
 // Components
 import TextAnimation from "@/components/TextAnimation";
-import CaseCard from "@/components/Cards";
+import { AdvantageCard, CaseCard } from "@/components/Cards";
 
 // Code
 
 export default function Home() {
   const t = useTranslations("Homepage");
   const caseCards = useTranslations("Cards").raw("caseCards") as {
+    title: string;
+    description: string;
+  }[];
+
+  const advantageCards = useTranslations("Cards").raw("advantageCards") as {
     title: string;
     description: string;
   }[];
@@ -35,7 +40,15 @@ export default function Home() {
 
       {/* Advantages */}
 
-      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8"></section>
+      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8">
+        {advantageCards.map((card, index) => (
+          <AdvantageCard
+            key={index}
+            src={`/animations/advantage${index + 1}.json`}
+            {...card}
+          />
+        ))}
+      </section>
 
       {/* Creative Cases */}
 

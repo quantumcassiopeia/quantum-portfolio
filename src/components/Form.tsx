@@ -5,8 +5,6 @@ import { useTranslations } from "next-intl";
 import Button from "./Button";
 import AnimatedLottie from "./AnimatedLottie";
 
-import check from "../../public/animations/check.json";
-
 export default function Form() {
   const t = useTranslations("Form");
 
@@ -62,7 +60,7 @@ export default function Form() {
     return (
       <div className="flex flex-col items-center">
         <h3 className="text-3xl">{t("success")}</h3>
-        <AnimatedLottie animationData={check} loop={false} />
+        <AnimatedLottie src="/animations/check.json" loop={false} />
       </div>
     );
   }
