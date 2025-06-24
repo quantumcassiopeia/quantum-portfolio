@@ -1,51 +1,14 @@
 {
-  "HomePage": {
+  "Homepage": {
     "title": "Bem-vindo à Quantum.",
     "subtitle": "Soluções inteligentes para o seu negócio",
 
-    "CardAdvantages": {
-      "Card1": {
-        "title": "Cross-platform",
-        "description": "Uma experiência fluida em qualquer dispositivo — do celular ao desktop."
-      },
-      "Card2": {
-        "title": "Carregamento rápido",
-        "description": "Imagens otimizadas, código limpo e as melhores práticas para garantir velocidade e performance."
-      },
-      "Card3": {
-        "title": "Navegação intuitiva",
-        "description": "Design limpo e intuitivo para que o usuário encontre o que precisa com facilidade."
-      },
-      "Card4": {
-        "title": "SEO",
-        "description": "SEO estratégico para que seu site se destaque nos mecanismos de busca."
-      }
-    },
-
     "CreativeCases": {
-      "title": "Cases Criativos",
-      "cards": {
-        "case1": {
-          "title": "Portifólio",
-          "description": "Portifólio elegante e responsivo para apresentação de cases."
-        },
-        "case2": {
-          "title": "Fitness",
-          "description": "Plataforma focada em exercícios físicos e bem-estar."
-        },
-        "case3": {
-          "title": "Educação",
-          "description": "Videoaulas e materiais educativos para estudantes e professores."
-        },
-        "case4": {
-          "title": "e-commerce",
-          "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade."
-        }
-      }
+      "title": "Creative Cases"
     }
   },
 
-  "AboutUs": {
+  "AboutUsPage": {
     "title": "Sobre a Quantum Soluções",
     "paragraph1": {
       "beforeLink": "A Quantum é uma empresa fundada em 2025 por",
@@ -55,9 +18,48 @@
     "paragraph3": "Saiba mais sobre o criador da Quantum acessando o currículo disponível nas versões"
   },
 
-  "Contact": {
+  "ContactPage": {
     "title": "Contato",
     "paragraph": "Orçamentos, dúvidas, elogios ou sugestões? Deixe sua mensagem no formulário abaixo ou entre em contato por um de nossos canais de atendimento no rodapé da página."
+  },
+
+  "Cards": {
+    "advantageCards": [
+      {
+        "title": "Cross-platform",
+        "description": "Uma experiência fluida em qualquer dispositivo — do celular ao desktop."
+      },
+      {
+        "title": "Carregamento rápido",
+        "description": "Imagens otimizadas, código limpo e as melhores práticas para garantir velocidade e performance."
+      },
+      {
+        "title": "Navegação intuitiva",
+        "description": "Design limpo e intuitivo para que o usuário encontre o que precisa com facilidade."
+      },
+      {
+        "title": "SEO",
+        "description": "SEO estratégico para que seu site se destaque nos mecanismos de busca."
+      }
+    ],
+    "caseCards": [
+      {
+        "title": "Portifólio",
+        "description": "Portifólio elegante e responsivo para apresentação de cases."
+      },
+      {
+        "title": "Fitness",
+        "description": "Plataforma focada em exercícios físicos e bem-estar."
+      },
+      {
+        "title": "Educação",
+        "description": "Videoaulas e materiais educativos para estudantes e professores."
+      },
+      {
+        "title": "e-commerce",
+        "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade."
+      }
+    ]
   },
 
   "Footer": {

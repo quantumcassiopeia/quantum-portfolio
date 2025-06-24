@@ -1,51 +1,14 @@
 {
-  "HomePage": {
+  "Homepage": {
     "title": "Welcome to Quantum.",
     "subtitle": "Innovative solutions for your business.",
 
-    "CardAdvantages": {
-      "Card1": {
-        "title": "Cross-platform",
-        "description": "A seamless experience on any device — from mobile to desktop."
-      },
-      "Card2": {
-        "title": "Fast loading",
-        "description": "Optimized images, clean code, and best practices to ensure speed and performance."
-      },
-      "Card3": {
-        "title": "Intuitive navigation",
-        "description": "Clean and intuitive design so users can easily find what they need."
-      },
-      "Card4": {
-        "title": "SEO",
-        "description": "Strategic SEO to help your site stand out in search engines."
-      }
-    },
-
     "CreativeCases": {
-      "title": "Creative Cases",
-      "cards": {
-        "case1": {
-          "title": "Portfolio",
-          "description": "Elegant and responsive portfolio for showcasing projects."
-        },
-        "case2": {
-          "title": "Fitness",
-          "description": "Platform focused on physical exercise and well-being."
-        },
-        "case3": {
-          "title": "Education",
-          "description": "Video lessons and educational materials for students and teachers."
-        },
-        "case4": {
-          "title": "E-commerce",
-          "description": "Lightweight and functional e-commerce site focused on product display and usability."
-        }
-      }
+      "title": "Creative Cases"
     }
   },
 
-  "AboutUs": {
+  "AboutUsPage": {
     "title": "About Quantum Solutions",
     "paragraph1": {
       "beforeLink": "Quantum is a company founded in 2025 by",
@@ -55,7 +18,7 @@
     "paragraph3": "Learn more about the creator of Quantum by accessing the resume available in the versions"
   },
 
-  "Contact": {
+  "ContactPage": {
     "title": "Contact",
     "paragraph": "Quotes, questions, compliments, or suggestions? Leave your message in the form below or reach out through one of our support channels in the page footer."
   },
@@ -64,6 +27,45 @@
     "contactUs": "Contact Us",
     "sendmessage": "Send a message",
     "socialmedia": "Social Media"
+  },
+
+  "Cards": {
+    "advantageCards": [
+      {
+        "title": "Cross-platform",
+        "description": "A seamless experience on any device — from mobile to desktop."
+      },
+      {
+        "title": "Fast loading",
+        "description": "Optimized images, clean code, and best practices to ensure speed and performance."
+      },
+      {
+        "title": "Intuitive navigation",
+        "description": "Clean and intuitive design so users can easily find what they need."
+      },
+      {
+        "title": "SEO",
+        "description": "Strategic SEO to help your site stand out in search engines."
+      }
+    ],
+    "caseCards": [
+      {
+        "title": "Portfolio",
+        "description": "Elegant and responsive portfolio for showcasing projects."
+      },
+      {
+        "title": "Fitness",
+        "description": "Platform focused on physical exercise and well-being."
+      },
+      {
+        "title": "Education",
+        "description": "Video lessons and educational materials for students and teachers."
+      },
+      {
+        "title": "E-commerce",
+        "description": "Lightweight and functional e-commerce site focused on product display and usability."
+      }
+    ]
   },
 
   "Form": {

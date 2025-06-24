@@ -4,20 +4,18 @@ import { useTranslations } from "next-intl";
 
 // Animations
 
-import crossplatform from "../../../public/animations/crossplatform.json";
-import fast from "../../../public/animations/fast.json";
-import intuitive from "../../../public/animations/intuitive.json";
-import search from "../../../public/animations/search.json";
-
 // Components
 import TextAnimation from "@/components/TextAnimation";
-import CardAdvantages from "@/components/CardAdvantages";
-import CardCreativeCases from "@/components/CardCreativeCases";
+import CaseCard from "@/components/Cards";
 
 // Code
 
 export default function Home() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("Homepage");
+  const caseCards = useTranslations("Cards").raw("caseCards") as {
+    title: string;
+    description: string;
+  }[];
 
   return (
     <main className="pb-28">
@@ -37,28 +35,7 @@ export default function Home() {
 
       {/* Advantages */}
 
-      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8">
-        <CardAdvantages
-          title={t("CardAdvantages.Card1.title")}
-          description={t("CardAdvantages.Card1.description")}
-          animation={crossplatform}
-        />
-        <CardAdvantages
-          title={t("CardAdvantages.Card2.title")}
-          description={t("CardAdvantages.Card2.description")}
-          animation={fast}
-        />
-        <CardAdvantages
-          title={t("CardAdvantages.Card3.title")}
-          description={t("CardAdvantages.Card3.description")}
-          animation={intuitive}
-        />
-        <CardAdvantages
-          title={t("CardAdvantages.Card4.title")}
-          description={t("CardAdvantages.Card4.description")}
-          animation={search}
-        />
-      </section>
+      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8"></section>
 
       {/* Creative Cases */}
 
@@ -67,27 +44,14 @@ export default function Home() {
           {t("CreativeCases.title")}
         </h2>
         <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
-          <CardCreativeCases
-            href="/cases/1"
-            title={t("CreativeCases.cards.case1.title")}
-            image="/cases/1/case1.png"
-            description={t("CreativeCases.cards.case1.description")}
-          />
-          <CardCreativeCases
-            title={t("CreativeCases.cards.case2.title")}
-            image="/cases/2/case2.png"
-            description={t("CreativeCases.cards.case2.description")}
-          />
-          <CardCreativeCases
-            title={t("CreativeCases.cards.case3.title")}
-            image="/cases/3/case3.png"
-            description={t("CreativeCases.cards.case3.description")}
-          />
-          <CardCreativeCases
-            title={t("CreativeCases.cards.case4.title")}
-            image="/cases/4/case4.png"
-            description={t("CreativeCases.cards.case4.description")}
-          />
+          {caseCards.map((card, index) => (
+            <CaseCard
+              key={index}
+              src={`/cases/${index + 1}/case${index + 1}.png`}
+              href={`/cases/${index + 1}`}
+              {...card}
+            />
+          ))}
         </div>
       </section>
     </main>

@@ -1,16 +1,37 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
+import AnimatedLottie from "./AnimatedLottie";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-export default function CardCreativeCases({
+export function AdvantageCard({
+  title,
+  description,
+  animation,
+}: {
+  title: string;
+  description: string;
+  animation: object;
+}) {
+  return (
+    <div className="flex flex-col items-center gap-y-3 w-[20rem] h-[27rem]">
+      <div className="overflow-clip h-70 flex items-center justify-center">
+        <AnimatedLottie animationData={animation} />
+      </div>
+      <h3 className="text-2xl">{title}</h3>
+      <p className="text-center">{description}</p>
+    </div>
+  );
+}
+
+export default function CaseCard({
   href = "/cases",
   title,
-  image,
+  src,
   description,
 }: {
   href?: string;
   title: string;
-  image: string | StaticImport;
+  src: string | StaticImport;
   description: string;
 }) {
   return (
@@ -20,7 +41,7 @@ export default function CardCreativeCases({
     >
       <div className="relative flex flex-col h-full w-full rounded-4xl overflow-clip gap-y-[1px]">
         <div className="relative w-full h-2/3 overflow-clip">
-          <Image src={image} alt={title} fill className="object-cover" />
+          <Image src={src} alt={title} fill className="object-cover" />
         </div>
         <h3 className="absolute opacity-80 shadow-[var(--shadow)] top-8 bg-[var(--bg-color)] text-[1rem] rounded-r-4xl p-1.5 ">
           {title}
