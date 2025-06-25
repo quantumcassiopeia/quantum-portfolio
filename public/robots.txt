@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://quantum-portfolio-alpha.vercel.app
+
+# Sitemaps
+Sitemap: https://quantum-portfolio-alpha.vercel.app/sitemap.xml
