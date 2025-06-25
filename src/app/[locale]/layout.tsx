@@ -29,7 +29,10 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Quantum Solutions",
-  description: "Create intuitive digital experiences",
+  description: "Portfólio da empresa Quantum Solutions",
+  verification: {
+    google: "lfZyW-ISiZxR6FNcK3vAFa03sWPXzG0zZ8FDOfB0jBs",
+  },
 };
 
 export default async function RootLayout({
