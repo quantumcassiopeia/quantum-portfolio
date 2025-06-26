@@ -7,7 +7,7 @@ export default function NotFound() {
   const t = useTranslations("NotFound");
 
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen ">
+    <div className="flex flex-col items-center justify-center w-full h-screen ">
       <h1 className="text-5xl">{t("title")}</h1>
       <h2 className="text-2xl">{t("subtitle")}</h2>
       <AnimatedLottie src="/animations/404.json" />
@@ -15,6 +15,6 @@ export default function NotFound() {
       <Link href="/" className="text-center max-w-92">
         <Button className="mt-4">{t("button")}</Button>
       </Link>
-    </main>
+    </div>
   );
 }

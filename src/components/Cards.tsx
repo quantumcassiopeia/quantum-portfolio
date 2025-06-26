@@ -36,6 +36,7 @@ export function CaseCard({
 }) {
   return (
     <Link
+      // @ts-expect-error unknown pathname
       href={href}
       className="bg-multicolor shadow-[var(--shadow)] cursor-pointer h-96 w-72 rounded-4xl p-[1px] transition duration-700 ease-in-out hover:translate-y-[-10px]"
     >

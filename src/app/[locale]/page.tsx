@@ -1,20 +1,14 @@
-// React Config
-
 import { useTranslations } from "next-intl";
 
-// Animations
-
-// Components
 import TextAnimation from "@/components/TextAnimation";
 import { AdvantageCard, CaseCard } from "@/components/Cards";
-
-// Code
 
 export default function Home() {
   const t = useTranslations("Homepage");
   const caseCards = useTranslations("Cards").raw("caseCards") as {
     title: string;
     description: string;
+    slug: string;
   }[];
 
   const advantageCards = useTranslations("Cards").raw("advantageCards") as {
@@ -52,21 +46,23 @@ export default function Home() {
 
       {/* Creative Cases */}
 
-      <section className="flex flex-col justify-center px-4">
-        <h2 className="text-4xl leading-30 text-center  ">
-          {t("CreativeCases.title")}
-        </h2>
-        <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
-          {caseCards.map((card, index) => (
-            <CaseCard
-              key={index}
-              src={`/cases/${index + 1}/case${index + 1}.png`}
-              href={`/cases/${index + 1}`}
-              {...card}
-            />
-          ))}
-        </div>
-      </section>
+      {
+        <section className="flex flex-col justify-center px-4">
+          <h2 className="text-4xl leading-30 text-center  ">
+            {t("CreativeCases.title")}
+          </h2>
+          <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
+            {caseCards.map((card, index) => (
+              <CaseCard
+                key={index}
+                src={`/cases/${card.slug}/cardCover.png`}
+                href={`/cases/${card.slug}`}
+                {...card}
+              />
+            ))}
+          </div>
+        </section>
+      }
     </main>
   );
 }

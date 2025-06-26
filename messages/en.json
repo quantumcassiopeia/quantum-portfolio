@@ -55,19 +55,23 @@
     "caseCards": [
       {
         "title": "Portfolio",
-        "description": "Elegant and responsive portfolio for showcasing projects."
+        "description": "Elegant and responsive portfolio for showcasing projects.",
+        "slug": "portfolio"
       },
       {
         "title": "Fitness",
-        "description": "Platform focused on physical exercise and well-being."
+        "description": "Platform focused on physical exercise and well-being.",
+        "slug": "fitness"
       },
       {
         "title": "Education",
-        "description": "Video lessons and educational materials for students and teachers."
+        "description": "Video lessons and educational materials for students and teachers.",
+        "slug": "education"
       },
       {
         "title": "E-commerce",
-        "description": "Lightweight and functional e-commerce site focused on product display and usability."
+        "description": "Lightweight and functional e-commerce site focused on product display and usability.",
+        "slug": "e-commerce"
       }
     ]
   },
@@ -108,8 +112,9 @@
     "paragraph1": "We're working on it.",
     "paragraph2": "Check back later!"
   },
-  "cases": {
-    "1": {
+
+  "CasesData": {
+    "portfolio": {
       "title": "Portfolio",
       "paragraph1": "Designer Philip Greiner's portfolio, built using Next.js and Tailwind CSS. The site showcases a curated selection of his key projects within a clean, minimalist, and fully responsive layout. Navigation is smooth and intuitive, providing an enjoyable user experience across both mobile devices and desktops, with special attention to visual harmony and usability.",
       "paragraph2": "The project is optimized for high performance, fast loading times, and excellent user experience. It strictly follows best practices in accessibility and SEO, ensuring content is easily discoverable by search engines and accessible to all users. The codebase is modular and well-structured, making future maintenance, integrations, and scalability straightforward."

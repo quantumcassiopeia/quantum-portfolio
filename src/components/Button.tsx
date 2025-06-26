@@ -37,6 +37,7 @@ export default function Button({
 
     return (
       <Link
+        // @ts-expect-error unknown pathname
         href={href}
         {...rest}
         className={`${baseStyle} ${variantStyle} ${className}`}

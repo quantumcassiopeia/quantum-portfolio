@@ -6,7 +6,7 @@ export default function AboutUsPage() {
   const t = useTranslations("AboutUsPage");
 
   return (
-    <main className=" flex flex-col mx-auto gap-y-6 max-w-3xl mt-15 md:mt-20 p-4 pb-28">
+    <div className=" flex flex-col mx-auto gap-y-6 max-w-3xl mt-15 md:mt-20 p-4 pb-28">
       <section className="flex flex-col items-center">
         <AnimatedLottie src="/animations/team.json" />
         <h1 className="text-3xl font-bold mb-8 text-center ">{t("title")}</h1>
@@ -46,6 +46,6 @@ export default function AboutUsPage() {
           .
         </p>
       </section>
-    </main>
+    </div>
   );
 }

@@ -49,19 +49,23 @@
     "caseCards": [
       {
         "title": "Portfólio",
-        "description": "Portfólio elegante e responsivo para apresentação de cases."
+        "description": "Portfólio elegante e responsivo para apresentação de cases.",
+        "slug": "portfolio"
       },
       {
         "title": "Fitness",
-        "description": "Plataforma focada em exercícios físicos e bem-estar."
+        "description": "Plataforma focada em exercícios físicos e bem-estar.",
+        "slug": "fitness"
       },
       {
         "title": "Educação",
-        "description": "Videoaulas e materiais educativos para estudantes e professores."
+        "description": "Videoaulas e materiais educativos para estudantes e professores.",
+        "slug": "educacao"
       },
       {
         "title": "e-commerce",
-        "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade."
+        "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade.",
+        "slug": "e-commerce"
       }
     ]
   },
@@ -108,8 +112,8 @@
     "paragraph1": "Estamos trabalhando nisso.",
     "paragraph2": "Volte outra hora!"
   },
-  "cases": {
-    "1": {
+  "CasesData": {
+    "portfolio": {
       "title": "Portfólio",
       "paragraph1": "Portfólio do designer Philip Greiner, desenvolvido com as tecnologias Next.js e Tailwind CSS. O site apresenta uma curadoria visual dos principais trabalhos do designer, distribuídos em um layout limpo, minimalista e totalmente responsivo. A navegação é fluida e intuitiva, garantindo uma experiência agradável tanto em dispositivos móveis quanto em desktops, com atenção especial à harmonia visual e usabilidade.",
       "paragraph2": "O projeto foi otimizado para oferecer alta performance, carregamento rápido e excelente experiência do usuário. Segue rigorosamente as melhores práticas de acessibilidade e SEO, garantindo que o conteúdo seja facilmente encontrado por mecanismos de busca e acessível a todos os públicos. A estrutura do código é modular e bem organizada, facilitando manutenções futuras, integrações e possível escalabilidade da aplicação."
