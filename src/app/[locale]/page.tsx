@@ -55,7 +55,7 @@ export default function Home() {
             {caseCards.map((card, index) => (
               <CaseCard
                 key={index}
-                src={`/cases/${card.slug}/cardCover.png`}
+                src={`/cases/${card.slug}/cardCover.webp`}
                 href={`/cases/${card.slug}`}
                 {...card}
               />

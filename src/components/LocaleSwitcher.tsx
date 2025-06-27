@@ -14,7 +14,6 @@ export default function LocaleSwitcher() {
     const restParams = { ...params };
     delete restParams.locale;
     router.replace(
-      // @ts-expect-error: pathname pode ser indefinido ou incompatível com next-intl routing
       {
         pathname,
         query: restParams,

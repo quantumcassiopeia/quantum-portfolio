@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import path from "path";
 import { promises as fs } from "fs";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
 export default async function CasesLayout({
   params,
@@ -10,11 +10,12 @@ export default async function CasesLayout({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const slugFolderPath = path.join(process.cwd(), "public", "cases", slug);
 
   try {
-    const stats = await fs.stat(slugFolderPath);
-    if (!stats.isDirectory()) {
+    const stat = await fs.stat(
+      path.join(process.cwd(), "public", "cases", slug)
+    );
+    if (!stat.isDirectory()) {
       return notFound();
     }
   } catch {
@@ -31,7 +32,7 @@ export default async function CasesLayout({
         </h1>
         <div className=" bg-black relative w-full h-70 md:h-[32rem]">
           <Image
-            src={`/cases/${slug}/pageCover.jpeg`}
+            src={`/cases/${slug}/pageHero.webp`}
             alt={t("title")}
             fill
             priority

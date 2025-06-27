@@ -9,7 +9,6 @@ export const routing = defineRouting({
       "pt-BR": "/sobre-nos",
     },
     "/cases": "/cases",
-    "/cases/[slug]": "/cases/[slug]",
     "/contact": {
       "pt-BR": "/contato",
     },

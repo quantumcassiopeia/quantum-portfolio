@@ -42,7 +42,13 @@ export function CaseCard({
     >
       <div className="relative flex flex-col h-full w-full rounded-4xl overflow-clip gap-y-[1px]">
         <div className="relative w-full h-2/3 overflow-clip">
-          <Image src={src} alt={title} fill className="object-cover" />
+          <Image
+            src={src}
+            alt={title}
+            fill
+            sizes="50vw"
+            className="object-cover"
+          />
         </div>
         <h3 className="absolute opacity-80 shadow-[var(--shadow)] top-8 bg-[var(--bg-color)] text-[1rem] rounded-r-4xl p-1.5 ">
           {title}
