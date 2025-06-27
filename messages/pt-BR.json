@@ -3,9 +3,12 @@
     "title": "Bem-vindo à Quantum.",
     "subtitle": "Soluções inteligentes para o seu negócio",
 
-    "CreativeCases": {
-      "title": "Cases Criativos"
-    }
+    "advantagesSectionTitle": "Por que escolher a Quantum",
+    "advantagesSectionTitleSpan": "?",
+    "advantagesSectionParagraph": "Na Quantum, unimos tecnologia de ponta, design responsivo e estratégias de SEO para criar soluções digitais que geram resultados reais. Nossa missão é transformar sua presença online em uma vantagem competitiva — com sites rápidos, intuitivos e prontos para escalar seu negócio.",
+
+    "creativeCasesSectionTitle": "Cases Criativos",
+    "creativeCasesSectionParagraph": "Conheça projetos reais em que aplicamos soluções digitais personalizadas — com foco em performance, usabilidade e escalabilidade. De plataformas fitness a e-commerces otimizados, nossos cases mostram como a Quantum transforma desafios em resultados concretos. Veja como ajudamos negócios a crescer com sites rápidos, responsivos e prontos para ranquear nos mecanismos de busca."
   },
 
   "AboutUsPage": {

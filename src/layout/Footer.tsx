@@ -7,7 +7,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="flex flex-col min-h-64 bg-[var(--bg-color)] pt-10 px-4 mt-auto">
+    <footer className="flex flex-col min-h-64 bg-[var(--bg-color)] pt-10 px-4 mt-10">
       <div className="flex flex-col gap-4 md:flex-row justify-between leading-8 text-[var(--base-neutral-color)] pt-4 border-t border-[var(--base-neutral-color)]/25">
         <section>
           <Navbar showContact={false} />

@@ -9,7 +9,7 @@ export default async function CasesLayout({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  let { slug } = await params;
 
   try {
     const stat = await fs.stat(
@@ -21,6 +21,8 @@ export default async function CasesLayout({
   } catch {
     return notFound();
   }
+
+  slug = "portfolio"; // delete
 
   const t = await getTranslations(`CasesData.${slug}`);
 

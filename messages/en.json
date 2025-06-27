@@ -3,9 +3,12 @@
     "title": "Welcome to Quantum.",
     "subtitle": "Innovative solutions for your business.",
 
-    "CreativeCases": {
-      "title": "Creative Cases"
-    }
+    "advantagesSectionTitle": "Why Choose Quantum for Your",
+    "advantagesSectionTitleSpan": "?",
+    "advantagesSectionParagraph": "At Quantum, we combine cutting-edge technology, responsive design, and SEO-driven strategies to deliver digital solutions that generate real results. Our mission is to turn your online presence into a competitive advantage — with fast, intuitive websites built to scale your business.",
+
+    "creativeCasesSectionTitle": "Creative Cases",
+    "creativeCasesSectionParagraph": "Discover real projects where we applied custom digital solutions — focused on performance, usability, and scalability. From fitness platforms to high-converting e-commerce sites, our case studies show how Quantum turns challenges into measurable results. See how we help businesses grow with fast, responsive websites ready to rank in search engines."
   },
 
   "AboutUsPage": {

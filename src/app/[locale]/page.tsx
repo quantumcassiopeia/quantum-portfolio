@@ -17,7 +17,7 @@ export default function Home() {
   }[];
 
   return (
-    <main className="pb-28">
+    <div className="className flex flex-col gap-28">
       {/* Hero */}
 
       <section className="flex flex-col gap-y-5 justify-center bg-rainbow-gradient min-h-[30rem] mx-1.5 mt-2.5 p-4 lg:pl-20  rounded-4xl overflow-x-hidden ">
@@ -34,23 +34,41 @@ export default function Home() {
 
       {/* Advantages */}
 
-      <section className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12 p-8">
-        {advantageCards.map((card, index) => (
-          <AdvantageCard
-            key={index}
-            src={`/animations/advantage${index + 1}.json`}
-            {...card}
-          />
-        ))}
+      <section className="px-2">
+        <div className="flex flex-col md:items-center gap-4 md:flex-row">
+          <h2 className="text-3xl w-96">
+            {t("advantagesSectionTitle")}
+            <span className="text-rainbow-gradient">
+              {t("advantagesSectionTitleSpan")}
+            </span>
+          </h2>
+          <div className="w-40 md:w-full h-0.5 bg-multicolor rounded-full" />
+        </div>
+        <p className="max-w-xl py-8">{t("advantagesSectionParagraph")}</p>
+        <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12">
+          {advantageCards.map((card, index) => (
+            <AdvantageCard
+              key={index}
+              src={`/animations/advantage${index + 1}.json`}
+              {...card}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Creative Cases */}
 
       {
-        <section className="flex flex-col justify-center px-4">
-          <h2 className="text-4xl leading-30 text-center  ">
-            {t("CreativeCases.title")}
-          </h2>
+        <section className="flex flex-col justify-center px-2">
+          <div className="flex flex-col md:items-center gap-4 md:flex-row">
+            <h2 className="text-3xl w-96 md:order-1">
+              {t("creativeCasesSectionTitle")}
+            </h2>
+            <div className="w-40 md:w-full h-0.5 bg-multicolor rounded-full" />
+          </div>
+          <p className="max-w-xl py-10 md:ml-auto">
+            {t("creativeCasesSectionParagraph")}
+          </p>
           <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
             {caseCards.map((card, index) => (
               <CaseCard
@@ -63,6 +81,6 @@ export default function Home() {
           </div>
         </section>
       }
-    </main>
+    </div>
   );
 }
