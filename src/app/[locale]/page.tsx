@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 import TextAnimation from "@/components/TextAnimation";
 import { AdvantageCard, CaseCard } from "@/components/Cards";
+import { FadeInUp } from "@/components/Animations";
 
 export default function Home() {
   const t = useTranslations("Homepage");
@@ -44,7 +45,9 @@ export default function Home() {
           </h2>
           <div className="w-40 md:w-full h-0.5 bg-multicolor rounded-full" />
         </div>
-        <p className="max-w-xl py-8">{t("advantagesSectionParagraph")}</p>
+        <FadeInUp>
+          <p className="max-w-xl py-8">{t("advantagesSectionParagraph")}</p>
+        </FadeInUp>
         <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-12">
           {advantageCards.map((card, index) => (
             <AdvantageCard
@@ -66,9 +69,11 @@ export default function Home() {
             </h2>
             <div className="w-40 md:w-full h-0.5 bg-multicolor rounded-full" />
           </div>
-          <p className="max-w-xl py-10 md:ml-auto">
-            {t("creativeCasesSectionParagraph")}
-          </p>
+          <FadeInUp>
+            <p className="max-w-xl py-10 md:ml-auto">
+              {t("creativeCasesSectionParagraph")}
+            </p>
+          </FadeInUp>
           <div className="flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
             {caseCards.map((card, index) => (
               <CaseCard
