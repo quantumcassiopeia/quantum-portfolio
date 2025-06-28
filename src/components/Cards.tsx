@@ -27,12 +27,12 @@ export function CaseCard({
   href = "/cases",
   title,
   src,
-  description,
+  summary,
 }: {
   href?: string;
   title: string;
   src: string | StaticImport;
-  description: string;
+  summary: string;
 }) {
   return (
     <Link
@@ -54,7 +54,7 @@ export function CaseCard({
           {title}
         </h3>
         <p className="flex items-center bg-[var(--bg-color)] h-1/3 py-1.5 px-3.5">
-          {description}
+          {summary}
         </p>
       </div>
     </Link>

@@ -52,22 +52,27 @@
     "caseCards": [
       {
         "title": "Portfólio",
-        "description": "Portfólio elegante e responsivo para apresentação de cases.",
+        "summary": "Portfólio elegante e responsivo para apresentação de cases.",
         "slug": "portfolio"
       },
       {
+        "title": "Spa de Beleza",
+        "summary": "Site institucional para spa, com design responsivo e presença digital profissional.",
+        "slug": "wellness-spa"
+      },
+      {
         "title": "Fitness",
-        "description": "Plataforma focada em exercícios físicos e bem-estar.",
+        "summary": "Plataforma focada em exercícios físicos e bem-estar.",
         "slug": "fitness"
       },
       {
         "title": "Educação",
-        "description": "Videoaulas e materiais educativos para estudantes e professores.",
+        "summary": "Videoaulas e materiais educativos para estudantes e professores.",
         "slug": "education"
       },
       {
         "title": "e-commerce",
-        "description": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade.",
+        "summary": "Site e-commerce leve e funcional, com foco na exibição de produtos e usabilidade.",
         "slug": "e-commerce"
       }
     ]
@@ -118,8 +123,48 @@
   "CasesData": {
     "portfolio": {
       "title": "Portfólio",
-      "paragraph1": "Portfólio do designer Philip Greiner, desenvolvido com as tecnologias Next.js e Tailwind CSS. O site apresenta uma curadoria visual dos principais trabalhos do designer, distribuídos em um layout limpo, minimalista e totalmente responsivo. A navegação é fluida e intuitiva, garantindo uma experiência agradável tanto em dispositivos móveis quanto em desktops, com atenção especial à harmonia visual e usabilidade.",
-      "paragraph2": "O projeto foi otimizado para oferecer alta performance, carregamento rápido e excelente experiência do usuário. Segue rigorosamente as melhores práticas de acessibilidade e SEO, garantindo que o conteúdo seja facilmente encontrado por mecanismos de busca e acessível a todos os públicos. A estrutura do código é modular e bem organizada, facilitando manutenções futuras, integrações e possível escalabilidade da aplicação."
+      "summary": "Desenvolvimento de um portfólio digital para o designer Philip Greiner, com foco em identidade visual, usabilidade e apresentação profissional de seus projetos criativos.",
+      "content": "Este projeto consistiu na criação de um site portfólio para o designer Philip Greiner, com o objetivo de destacar seus principais trabalhos e transmitir sua identidade visual de forma clara e impactante. O site foi concebido para ser uma vitrine interativa, com navegação intuitiva e forte apelo visual, visando atrair clientes e parceiros em potencial.",
+      "solutions": {
+        "title": "Soluções aplicadas",
+        "items": [
+          "Design responsivo com identidade visual alinhada ao estilo criativo do designer.",
+          "Organização estratégica dos projetos com foco na experiência do usuário.",
+          "Otimização de SEO on-page para melhorar a visibilidade em mecanismos de busca.",
+          "Desempenho otimizado com carregamento rápido e imagens ajustadas.",
+          "Sessões de destaque para biografia, serviços e formas de contato."
+        ]
+      },
+      "resume": "O resultado é um portfólio digital moderno, leve e funcional, que valoriza a trajetória profissional de Philip Greiner e facilita o acesso ao seu trabalho. A solução reforça sua presença online e cria conexões significativas com o público-alvo.",
+      "tags": [
+        "portfólio para designer",
+        "identidade visual",
+        "site responsivo",
+        "ux design",
+        "design criativo"
+      ]
+    },
+
+    "wellness-spa": {
+      "title": "Spa de Beleza",
+      "content": "Este projeto consistiu no desenvolvimento de um site institucional para um spa, com foco em transmitir sensações de bem-estar, tranquilidade e profissionalismo. O objetivo foi criar uma presença online elegante e acolhedora, alinhada à identidade visual do spa.",
+      "solutions": {
+        "title": "Soluções aplicadas",
+        "items": [
+          "Design centrado no usuário, com navegação fluida e hierarquia visual bem definida.",
+          "Desenvolvimento com foco em SEO on-page, usando títulos claros, descrições e imagens otimizadas.",
+          "Implementação de boas práticas de performance e carregamento rápido.",
+          "Integração com redes sociais e Google Maps."
+        ]
+      },
+      "resume": "Um site leve, elegante e funcional, que transmite confiança e proporciona uma experiência agradável aos visitantes. O projeto elevou a presença digital do spa e facilitou o agendamento de atendimentos.",
+      "tags": [
+        "site para spa",
+        "design responsivo",
+        "seo",
+        "ux",
+        "institucional"
+      ]
     }
   },
   "NotFound": {

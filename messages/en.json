@@ -58,22 +58,27 @@
     "caseCards": [
       {
         "title": "Portfolio",
-        "description": "Elegant and responsive portfolio for showcasing projects.",
+        "summary": "Elegant and responsive portfolio for showcasing projects.",
         "slug": "portfolio"
       },
       {
+        "title": "Wellness Spa",
+        "summary": "Corporate website for a wellness spa, with a focus on user experience and design.",
+        "slug": "wellness-spa"
+      },
+      {
         "title": "Fitness",
-        "description": "Platform focused on physical exercise and well-being.",
+        "summary": "Platform focused on physical exercise and well-being.",
         "slug": "fitness"
       },
       {
         "title": "Education",
-        "description": "Video lessons and educational materials for students and teachers.",
+        "summary": "Video lessons and educational materials for students and teachers.",
         "slug": "education"
       },
       {
         "title": "E-commerce",
-        "description": "Lightweight and functional e-commerce site focused on product display and usability.",
+        "summary": "Lightweight and functional e-commerce site focused on product display and usability.",
         "slug": "e-commerce"
       }
     ]
@@ -119,8 +124,48 @@
   "CasesData": {
     "portfolio": {
       "title": "Portfolio",
-      "paragraph1": "Designer Philip Greiner's portfolio, built using Next.js and Tailwind CSS. The site showcases a curated selection of his key projects within a clean, minimalist, and fully responsive layout. Navigation is smooth and intuitive, providing an enjoyable user experience across both mobile devices and desktops, with special attention to visual harmony and usability.",
-      "paragraph2": "The project is optimized for high performance, fast loading times, and excellent user experience. It strictly follows best practices in accessibility and SEO, ensuring content is easily discoverable by search engines and accessible to all users. The codebase is modular and well-structured, making future maintenance, integrations, and scalability straightforward."
+      "summary": "Development of a digital portfolio for designer Philip Greiner, focusing on visual identity, usability, and a professional presentation of his creative work.",
+      "content": "This project involved crafting a digital portfolio for designer Philip Greiner, aimed at showcasing his standout projects and clearly expressing his personal design identity. The website functions as an interactive showcase, with intuitive navigation and strong visual appeal, designed to attract potential clients and creative partners.",
+      "solutions": {
+        "title": "Solutions Delivered",
+        "items": [
+          "Responsive design aligned with the designer’s unique creative style and branding.",
+          "Strategic organization of projects to enhance the user experience and browsing flow.",
+          "On-page SEO optimization to improve search engine visibility and discoverability.",
+          "Performance-optimized development for fast load times and compressed assets.",
+          "Dedicated sections for biography, services, and direct contact options."
+        ]
+      },
+      "resume": "The result is a modern, lightweight, and functional digital portfolio that highlights Philip Greiner’s professional journey and streamlines access to his work. The site strengthens his digital presence and builds meaningful connections with his target audience.",
+      "tags": [
+        "designer portfolio",
+        "visual identity",
+        "responsive design",
+        "ux design",
+        "creative showcase"
+      ]
+    },
+
+    "wellness-spa": {
+      "title": "Wellness Spa",
+      "content": "This project involved the creation of a corporate website for a wellness spa, aiming to convey feelings of well-being, serenity, and professionalism. The goal was to establish an elegant and welcoming online presence aligned with the spa’s visual identity.",
+      "solutions": {
+        "title": "Solutions Delivered",
+        "items": [
+          "User-centered design with smooth navigation and well-defined visual hierarchy.",
+          "On-page SEO development with clear headings, engaging descriptions, and optimized images.",
+          "Implementation of performance best practices to ensure fast loading times.",
+          "Integration with social media platforms and Google Maps for enhanced discoverability."
+        ]
+      },
+      "resume": "A lightweight, elegant, and functional website that builds trust and provides a pleasant user experience. The project enhanced the spa's digital presence and simplified appointment scheduling.",
+      "tags": [
+        "spa website design",
+        "responsive layout",
+        "seo optimization",
+        "user experience",
+        "corporate web project"
+      ]
     }
   },
   "NotFound": {

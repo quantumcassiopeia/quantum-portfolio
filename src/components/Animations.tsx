@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function FadeInUp({
+export function FadeInY({
   children,
   className,
 }: {
@@ -43,7 +43,7 @@ export function FadeInUp({
   }, []);
 
   return (
-    <div ref={containerRef} className={className}>
+    <div ref={containerRef} className={`overflow-clip ${className}`}>
       {React.Children.map(children, (child, index) => (
         <div className="animated-item" key={index}>
           {child}

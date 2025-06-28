@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import AnimatedLottie from "@/components/AnimatedLottie";
-import { FadeInUp } from "@/components/Animations";
+import { FadeInY } from "@/components/Animations";
 
 export default function AboutUsPage() {
   const t = useTranslations("AboutUsPage");
@@ -11,7 +11,7 @@ export default function AboutUsPage() {
       <section className="flex flex-col items-center">
         <AnimatedLottie src="/animations/team.json" />
         <h1 className="text-3xl font-bold mb-8 text-center ">{t("title")}</h1>
-        <FadeInUp>
+        <FadeInY>
           <p className="leading-8 md:text-justify">
             {t("paragraph1.beforeLink")}{" "}
             <a
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
             </a>
             .
           </p>
-        </FadeInUp>
+        </FadeInY>
       </section>
 
       <section></section>
