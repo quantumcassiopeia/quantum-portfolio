@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export function FadeInY({
   children,
@@ -15,7 +16,7 @@ export function FadeInY({
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useGSAP(() => {
     if (!containerRef.current) return;
 
     const ctx = gsap.context(() => {
@@ -40,7 +41,7 @@ export function FadeInY({
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [children]);
 
   return (
     <div ref={containerRef} className={`overflow-clip ${className}`}>
@@ -64,32 +65,39 @@ export function FadeInSide({
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
-    if (!containerRef.current) return;
+  useGSAP(
+    () => {
+      if (!containerRef.current) return;
 
-    const ctx = gsap.context(() => {
-      const items = containerRef.current!.querySelectorAll(".animated-item");
+      const ctx = gsap.context(() => {
+        const items = containerRef.current!.querySelectorAll(".animated-item");
 
-      gsap.fromTo(
-        items,
-        { x: side === "left" ? -100 : 100, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1.2,
-          stagger: 0.4,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }, containerRef);
+        gsap.fromTo(
+          items,
+          { x: side === "left" ? -100 : 100, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.2,
+            stagger: 0.4,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: containerRef.current,
+              start: "top 80%",
+              toggleActions: "play none none play",
+            },
+          }
+        );
+      }, containerRef);
 
-    return () => ctx.revert();
-  }, [side]);
+      return () => ctx.revert();
+    },
+    {
+      dependencies: [children, side, className],
+      scope: containerRef,
+      revertOnUpdate: true,
+    }
+  );
 
   return (
     <div ref={containerRef} className={`overflow-clip ${className}`}>
