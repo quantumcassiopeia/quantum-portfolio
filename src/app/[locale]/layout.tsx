@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   title: "Quantum Solutions",
   description:
     "Discover solutions in UX, branding, and digital presence. Explore real-world responsive design projects focused on performance and conversion.",
+  verification: {
+    google: "eNtgolEo4FZ0eH6n4Giwkw79EnuHNyZUMgCXh2I_RAk",
+  },
 };
 
 export default async function RootLayout({
