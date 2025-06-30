@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://www.qcsolutions.tech",
+  siteUrl: "https://qcsolutions.tech",
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,

@@ -1,9 +1,9 @@
 # *
 User-agent: *
-Allow: *
+Allow: /
 
 # Host
-Host: https://www.qcsolutions.tech
+Host: https://qcsolutions.tech
 
 # Sitemaps
-Sitemap: https://www.qcsolutions.tech/sitemap.xml
+Sitemap: https://qcsolutions.tech/sitemap.xml
