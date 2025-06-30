@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://quantum-portfolio-alpha.vercel.app
+Host: https://www.qcsolutions.tech
 
 # Sitemaps
-Sitemap: https://quantum-portfolio-alpha.vercel.app/sitemap.xml
+Sitemap: https://www.qcsolutions.tech/sitemap.xml

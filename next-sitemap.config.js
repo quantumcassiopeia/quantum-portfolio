@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: "https://quantum-portfolio-alpha.vercel.app",
+  siteUrl: "https://www.qcsolutions.tech",
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,
