@@ -5,7 +5,13 @@ module.exports = {
   priority: 0.7,
   exclude: [],
   additionalPaths: async () => {
-    const slug = ["portifolio", "fitness", "education", "e-commerce"];
+    const slug = [
+      "portifolio",
+      "fitness",
+      "education",
+      "e-commerce",
+      "wellness-spa",
+    ];
     const staticPages = ["/", "/about-us", "/contact"];
 
     const staticPaths = staticPages.flatMap((path) => [

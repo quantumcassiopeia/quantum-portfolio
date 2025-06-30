@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   title: "Quantum Solutions",
   description: "Portfólio da empresa Quantum Solutions",
   verification: {
-    google: "lfZyW-ISiZxR6FNcK3vAFa03sWPXzG0zZ8FDOfB0jBs",
+    google: "",
   },
 };
 
