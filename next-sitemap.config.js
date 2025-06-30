@@ -15,12 +15,12 @@ module.exports = {
     const staticPages = ["/", "/about-us", "/contact"];
 
     const staticPaths = staticPages.flatMap((path) => [
-      { loc: `/en${path}`, changefreq: "weekly", priority: 0.7 },
+      { loc: path, changefreq: "weekly", priority: 0.7 },
       { loc: `/pt-BR${path}`, changefreq: "weekly", priority: 0.7 },
     ]);
 
     const dynamicPaths = slug.flatMap((slug) => [
-      { loc: `/en/cases/${slug}`, changefreq: "weekly", priority: 0.7 },
+      { loc: `/cases/${slug}`, changefreq: "weekly", priority: 0.7 },
       { loc: `/pt-BR/cases/${slug}`, changefreq: "weekly", priority: 0.7 },
     ]);
 

@@ -10,18 +10,9 @@ export default function LocaleSwitcher() {
   const pathname = usePathname();
   const params = useParams();
 
-  const handleLocaleChange = (locale: Locale) => {
-    const restParams = { ...params };
-    delete restParams.locale;
-    router.replace(
-      {
-        pathname,
-        query: restParams,
-      },
-      {
-        locale,
-      }
-    );
+  const handleLocaleChange = (nextLocale: Locale) => {
+    // @ts-expect-error -- TypeScript will validate that only known `params`
+    router.replace({ pathname, params }, { locale: nextLocale });
   };
 
   return (
