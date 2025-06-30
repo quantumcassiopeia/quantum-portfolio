@@ -121,9 +121,75 @@
     "paragraph2": "Volte outra hora!"
   },
   "CasesData": {
+    "e-commerce": {
+      "title": "E-commerce – Loja Virtual Otimizada",
+      "content": "Este projeto consistiu no desenvolvimento de uma plataforma de e-commerce leve, responsiva e centrada em conversão. Criada para facilitar a exposição de produtos e otimizar a jornada do consumidor, a solução atende desde pequenas lojas virtuais até operações escaláveis. A navegação foi desenhada para garantir clareza, agilidade e confiança no processo de compra.",
+      "solutions": {
+        "title": "Soluções aplicadas",
+        "items": [
+          "Design responsivo e modular adaptado a diferentes nichos de mercado.",
+          "Estrutura de navegação fluida, com categorias inteligentes e filtros dinâmicos.",
+          "SEO técnico e estratégico com foco em produtos e termos de busca competitivos.",
+          "Integração com gateways de pagamento, formas de frete e ferramentas de retargeting.",
+          "Sistema de gerenciamento de produtos e pedidos via painel administrativo personalizado."
+        ]
+      },
+      "resume": "O resultado é um e-commerce veloz, funcional e visualmente atrativo, pronto para gerar conversões e se destacar nos buscadores. Com foco em usabilidade e escalabilidade, a plataforma ajuda marcas a venderem com eficiência e profissionalismo no ambiente digital.",
+      "tags": [
+        "e-commerce",
+        "loja virtual",
+        "site de vendas",
+        "vitrine digital",
+        "plataforma de comércio eletrônico"
+      ]
+    },
+    "education": {
+      "title": "Ensino Digital e Interativo",
+      "content": "Este projeto consistiu no desenvolvimento de uma plataforma educacional digital voltada para instituições de ensino, professores e produtores de conteúdo. A solução foi pensada para facilitar o acesso a aulas online, materiais complementares e atividades interativas, promovendo uma experiência de aprendizado intuitiva, moderna e escalável. O design prioriza a usabilidade para estudantes e administradores, com foco em performance e acessibilidade.",
+      "solutions": {
+        "title": "Soluções aplicadas",
+        "items": [
+          "Interface responsiva com navegação amigável em dispositivos móveis e desktop.",
+          "Organização estruturada de videoaulas, apostilas, quizzes e fóruns de discussão.",
+          "SEO educacional com palavras-chave como 'plataforma EAD', 'cursos online', 'ensino digital' e 'educação interativa'.",
+          "Áreas restritas para diferentes níveis de acesso: estudantes, professores e administradores.",
+          "Painel de controle intuitivo para gestão de cursos, trilhas de aprendizagem e acompanhamento de desempenho."
+        ]
+      },
+      "resume": "O resultado é uma plataforma educacional robusta e acessível, pronta para impulsionar projetos de ensino a distância com performance e escalabilidade. Com foco na aprendizagem ativa, a solução fortalece a presença digital de instituições e profissionais da educação.",
+      "tags": [
+        "plataforma educacional",
+        "EAD",
+        "cursos online",
+        "ensino digital",
+        "educação interativa"
+      ]
+    },
+    "fitness": {
+      "title": "Plataforma Fitness",
+      "content": "Este projeto consistiu na criação de uma plataforma digital voltada para o universo fitness, desenvolvida para atender academias, estúdios de treinamento funcional e personal trainers. A solução oferece uma experiência interativa e responsiva, com foco na divulgação de treinos, planos personalizados e comunicação direta com os alunos. O design e a usabilidade foram pensados para transmitir motivação, energia e confiança.",
+      "solutions": {
+        "title": "Soluções aplicadas",
+        "items": [
+          "Design responsivo com layout moderno e adaptado para dispositivos móveis.",
+          "Organização intuitiva dos treinos e serviços oferecidos pelas academias ou personal trainers.",
+          "SEO estratégico com palavras-chave como 'treino online', 'personal trainer', 'academia digital' e 'programas fitness'.",
+          "Integração com formulários de matrícula, agendamento de aulas e redes sociais.",
+          "Painel administrativo para atualização de conteúdos, aulas e planos de forma autônoma."
+        ]
+      },
+      "resume": "O resultado é uma plataforma fitness funcional, leve e envolvente, pronta para ampliar a visibilidade de profissionais e empresas do setor. Com design motivador, navegação fluida e presença digital otimizada, o projeto fortalece a conexão entre marcas de bem-estar e seus públicos.",
+      "tags": [
+        "plataforma fitness",
+        "site para academia",
+        "personal trainer online",
+        "treino digital",
+        "marketing fitness"
+      ]
+    },
+
     "portfolio": {
       "title": "Portfólio",
-      "summary": "Desenvolvimento de um portfólio digital para o designer Philip Greiner, com foco em identidade visual, usabilidade e apresentação profissional de seus projetos criativos.",
       "content": "Este projeto consistiu na criação de um site portfólio para o designer Philip Greiner, com o objetivo de destacar seus principais trabalhos e transmitir sua identidade visual de forma clara e impactante. O site foi concebido para ser uma vitrine interativa, com navegação intuitiva e forte apelo visual, visando atrair clientes e parceiros em potencial.",
       "solutions": {
         "title": "Soluções aplicadas",

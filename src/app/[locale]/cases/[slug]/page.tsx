@@ -33,7 +33,7 @@ export default async function CasesLayout({
       {/* hero section */}
 
       <section className="relative base-shadow rounded-4xl overflow-clip">
-        <h1 className=" bg-white text-black p-3 rounded-2xl absolute z-10 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 text-2xl md:text-5xl">
+        <h1 className=" bg-white text-black text-center p-3 rounded-2xl absolute z-10 top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2 text-2xl md:text-5xl">
           {t("title")}
         </h1>
         <div className="bg-black relative w-full h-70 md:h-[32rem]">

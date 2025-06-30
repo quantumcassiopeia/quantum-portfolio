@@ -122,9 +122,76 @@
   },
 
   "CasesData": {
+    "e-commerce": {
+      "title": "E-commerce – Optimized Online Store",
+      "content": "This project involved the development of a fast, responsive, and conversion-oriented e-commerce platform. Designed to showcase products clearly and streamline the buying experience, the solution meets the needs of small online shops as well as scalable digital businesses. The interface was crafted to ensure clarity, speed, and user trust throughout the shopping journey.",
+      "solutions": {
+        "title": "Solutions Delivered",
+        "items": [
+          "Responsive and modular design tailored to different market segments and product categories.",
+          "Fluid navigation structure with intelligent categories and dynamic filters.",
+          "Technical and strategic SEO targeting high-conversion keywords and product search visibility.",
+          "Integration with payment gateways, shipping options, and remarketing tools.",
+          "Custom admin panel for managing products, inventory, and orders efficiently."
+        ]
+      },
+      "resume": "The result is a fast, visually appealing, and conversion-ready e-commerce platform built to drive sales and boost organic search performance. With a focus on scalability and user experience, this solution empowers brands to grow confidently in the digital marketplace.",
+      "tags": [
+        "e-commerce",
+        "online store",
+        "sales website",
+        "digital storefront",
+        "ecommerce platform"
+      ]
+    },
+
+    "education": {
+      "title": "Digital Learning and Engagement",
+      "content": "This project involved the development of a digital learning platform designed for schools, educators, and online course creators. The solution aims to simplify access to video lessons, study materials, and interactive activities while providing a modern and scalable experience. The design prioritizes usability for students and administrators, with a focus on performance, accessibility, and long-term growth.",
+      "solutions": {
+        "title": "Solutions Delivered",
+        "items": [
+          "Responsive interface with intuitive navigation for mobile and desktop users.",
+          "Structured organization of video lessons, downloadable content, quizzes, and discussion forums.",
+          "SEO strategy with targeted keywords such as 'online learning platform', 'LMS', 'distance education', and 'interactive courses'.",
+          "Role-based access control with separate areas for students, teachers, and administrators.",
+          "Custom dashboard for managing courses, tracking learning progress, and updating content efficiently."
+        ]
+      },
+      "resume": "The result is a reliable, accessible, and performance-driven educational platform ready to support online learning initiatives. With an intuitive design and a strong digital foundation, the solution boosts the visibility of educational institutions and empowers professionals to deliver high-quality content at scale.",
+      "tags": [
+        "online education",
+        "learning platform",
+        "LMS",
+        "distance learning",
+        "digital classroom"
+      ]
+    },
+    "fitness": {
+      "title": "Fitness Platform",
+      "content": "This project involved developing a digital platform tailored for the fitness market, designed to meet the needs of gyms, functional training studios, and personal trainers. The platform delivers an interactive and responsive experience, allowing professionals to promote workouts, offer personalized plans, and communicate directly with their students. The design and user interface were crafted to convey energy, motivation, and professionalism.",
+      "solutions": {
+        "title": "Solutions Delivered",
+        "items": [
+          "Responsive design with a modern, mobile-first layout to reach users on any device.",
+          "Intuitive organization of workouts and services offered by gyms or fitness professionals.",
+          "On-page SEO optimization with targeted keywords such as 'online workout', 'personal trainer', 'digital gym', and 'fitness programs'.",
+          "Integration with contact forms, class booking systems, and social media platforms.",
+          "Admin dashboard for easily updating plans, schedules, and content autonomously."
+        ]
+      },
+      "resume": "The result is a functional, lightweight, and engaging fitness platform ready to boost the online presence of fitness professionals and organizations. With motivating visuals, smooth navigation, and SEO-driven structure, the solution strengthens the connection between wellness brands and their audience.",
+      "tags": [
+        "fitness platform",
+        "gym website",
+        "online personal trainer",
+        "digital workout",
+        "fitness marketing"
+      ]
+    },
+
     "portfolio": {
       "title": "Portfolio",
-      "summary": "Development of a digital portfolio for designer Philip Greiner, focusing on visual identity, usability, and a professional presentation of his creative work.",
       "content": "This project involved crafting a digital portfolio for designer Philip Greiner, aimed at showcasing his standout projects and clearly expressing his personal design identity. The website functions as an interactive showcase, with intuitive navigation and strong visual appeal, designed to attract potential clients and creative partners.",
       "solutions": {
         "title": "Solutions Delivered",
