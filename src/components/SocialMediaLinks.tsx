@@ -1,6 +1,12 @@
 "use client";
 
-import { LinkedIn, GitHub, WhatsApp, AttachEmail } from "@mui/icons-material";
+import {
+  LinkedIn,
+  GitHub,
+  WhatsApp,
+  AttachEmail,
+  Instagram,
+} from "@mui/icons-material";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "@/i18n/navigation";
 
@@ -28,7 +34,7 @@ export default function SocialMediaLinks({
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => {
         setShowContent(false);
-      }, 1000);
+      }, 3000);
       setShowContent(true);
     };
 
@@ -55,8 +61,17 @@ export default function SocialMediaLinks({
         </Link>
       </li>
       <li>
-        <a href="https://wa.me/5591985669109" target="_blank" rel="noreferrer">
+        <a href="https://wa.me/5521959167576" target="_blank" rel="noreferrer">
           <WhatsApp sx={iconStyle} />
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/quantuns.dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram sx={iconStyle} />
         </a>
       </li>
       <li>

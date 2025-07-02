@@ -18,7 +18,7 @@ export default function Home() {
   }[];
 
   return (
-    <div className="className flex flex-col gap-28">
+    <div className="className flex flex-col gap-28 overflow-x-hidden">
       {/* Hero */}
 
       <section className="flex flex-col gap-y-5 justify-center bg-rainbow-gradient min-h-[30rem] mx-1.5 mt-2.5 p-4 lg:pl-20  rounded-4xl overflow-x-hidden ">

@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="/contact" className="block">
             {t("sendmessage")}
           </Link>
-          <p>(91) 98566-9109</p>
+          <p>(21) 95916-7576</p>
           <p>quantumpeia.dev@gmail.com</p>
         </section>
         <section>
