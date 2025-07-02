@@ -6,7 +6,7 @@ module.exports = {
   exclude: [],
   additionalPaths: async () => {
     const slug = [
-      "portifolio",
+      "portfolio",
       "fitness",
       "education",
       "e-commerce",
