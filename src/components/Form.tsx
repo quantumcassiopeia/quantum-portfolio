@@ -12,6 +12,9 @@ export default function Form() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const [isVerified, setIsVerified] = useState(false);
+
   const [formData, setFormData] = useState({
     "entry.988830522": "",
     "entry.2006082270": "",
@@ -37,10 +40,7 @@ export default function Form() {
     e.preventDefault();
     setError(null);
 
-    const recaptchaToken = await recaptchaRef.current?.executeAsync();
-    recaptchaRef.current?.reset();
-
-    if (!recaptchaToken) {
+    if (!isVerified || !recaptchaToken) {
       setError(t("recaptcha"));
       return;
     }
@@ -178,6 +178,10 @@ export default function Form() {
         ref={recaptchaRef}
         size="normal"
         className="mx-auto"
+        onChange={(token) => {
+          setIsVerified(true);
+          setRecaptchaToken(token);
+        }}
       />
 
       <Button className="max-w-fit self-center" type="submit">
