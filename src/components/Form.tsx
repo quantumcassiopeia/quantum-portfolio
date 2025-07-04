@@ -1,15 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslations } from "next-intl";
 import Button from "./Button";
+import ReCAPTCHA from "react-google-recaptcha";
 import AnimatedLottie from "./AnimatedLottie";
 
 export default function Form() {
   const t = useTranslations("Form");
 
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isVerified, setIsVerified] = useState(false);
   const [formData, setFormData] = useState({
     "entry.988830522": "",
     "entry.2006082270": "",
@@ -35,12 +39,17 @@ export default function Form() {
     e.preventDefault();
     setError(null);
 
-    const url =
-      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5enfGttKdAD_zMbC8Ki43q_-CxZiuw5Ld-bpKJx7jCNawxg/formResponse";
-
-    const params = new URLSearchParams(formData).toString();
+    if (!isVerified) {
+      setError(t("recaptcha"));
+      return;
+    }
 
     try {
+      const url =
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5enfGttKdAD_zMbC8Ki43q_-CxZiuw5Ld-bpKJx7jCNawxg/formResponse";
+
+      const params = new URLSearchParams(formData).toString();
+
       await fetch(url, {
         method: "POST",
         headers: {
@@ -151,6 +160,13 @@ export default function Form() {
       {error && (
         <p className="text-red-600 font-semibold text-center">{error}</p>
       )}
+
+      <ReCAPTCHA
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+        ref={recaptchaRef}
+        onChange={(token) => setIsVerified(!!token)}
+        className="mx-auto"
+      />
 
       <Button className="max-w-fit self-center" type="submit">
         {t("button")}
