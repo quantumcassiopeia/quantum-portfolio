@@ -10,10 +10,8 @@ export default function Form() {
   const t = useTranslations("Form");
 
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [isVerified, setIsVerified] = useState(false);
   const [formData, setFormData] = useState({
     "entry.988830522": "",
     "entry.2006082270": "",
@@ -39,7 +37,21 @@ export default function Form() {
     e.preventDefault();
     setError(null);
 
-    if (!isVerified) {
+    const recaptchaToken = await recaptchaRef.current?.executeAsync();
+    recaptchaRef.current?.reset();
+
+    if (!recaptchaToken) {
+      setError(t("recaptcha"));
+      return;
+    }
+
+    const verify = await fetch("/api/verify-recaptcha", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token: recaptchaToken }),
+    });
+
+    if (!verify.ok) {
       setError(t("recaptcha"));
       return;
     }
@@ -164,8 +176,7 @@ export default function Form() {
       <ReCAPTCHA
         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
         ref={recaptchaRef}
-        onChange={(token) => setIsVerified(!!token)}
-        className="mx-auto"
+        size="invisible"
       />
 
       <Button className="max-w-fit self-center" type="submit">
