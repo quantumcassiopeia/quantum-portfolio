@@ -176,7 +176,8 @@ export default function Form() {
       <ReCAPTCHA
         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
         ref={recaptchaRef}
-        size="invisible"
+        size="normal"
+        className="mx-auto"
       />
 
       <Button className="max-w-fit self-center" type="submit">
