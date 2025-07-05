@@ -1,7 +1,25 @@
-import { useTranslations } from "next-intl";
-
+import { Locale, useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import AnimatedLottie from "@/components/AnimatedLottie";
 import { FadeInY } from "@/components/Animations";
+
+type Props = {
+  params: {
+    locale: Locale;
+  };
+};
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({
+    locale,
+    namespace: "AboutUsPage.Metadata",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function AboutUsPage() {
   const t = useTranslations("AboutUsPage");

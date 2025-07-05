@@ -1,4 +1,9 @@
 {
+  "Metadata": {
+    "title": "Quantum Soluções | Sites Modernos com SEO, Performance e Design Responsivo",
+    "description": "Bem-vindo à Quantum Soluções. Transformamos sua presença online em vantagem competitiva com sites intuitivos, rápidos e escaláveis. Unimos tecnologia de ponta, SEO estratégico e design responsivo para entregar resultados reais ao seu negócio."
+  },
+
   "Homepage": {
     "title": "Bem-vindo à Quantum.",
     "subtitle": "Soluções inteligentes para o seu negócio",
@@ -12,6 +17,11 @@
   },
 
   "AboutUsPage": {
+    "Metadata": {
+      "title": "Sobre a Quantum Soluções | Desenvolvimento de Sites Modernos e Personalizados",
+      "description": "Conheça a Quantum Soluções, empresa fundada por Robert Souza em 2025, especializada em criar sites modernos, responsivos e centrados na experiência do usuário. Soluções digitais com design, performance e usabilidade que representam cada cliente com qualidade e atenção aos detalhes."
+    },
+
     "title": "Sobre a Quantum Soluções",
     "paragraph1": {
       "beforeLink": "A Quantum é uma empresa fundada em 2025 por",
@@ -22,6 +32,11 @@
   },
 
   "ContactPage": {
+    "Metadata": {
+      "title": "Fale com a Quantum Soluções | Solicite Orçamentos e Tire Dúvidas",
+      "description": "Entre em contato com a equipe da Quantum Soluções para orçamentos, dúvidas, elogios ou sugestões. Utilize nosso formulário ou os canais de atendimento disponíveis no rodapé. Atendimento rápido, transparente e comprometido com sua necessidade."
+    },
+
     "title": "Contato",
     "paragraph": "Orçamentos, dúvidas, elogios ou sugestões? Deixe sua mensagem no formulário abaixo ou entre em contato por um de nossos canais de atendimento no rodapé da página."
   },

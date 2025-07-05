@@ -1,7 +1,27 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Locale } from "next-intl";
 
 import AnimatedLottie from "@/components/AnimatedLottie";
 import Form from "@/components/Form";
+
+type Props = {
+  params: {
+    locale: Locale;
+  };
+};
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({
+    locale,
+    namespace: "ContactPage.Metadata",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function ContactPage() {
   const t = useTranslations("ContactPage");

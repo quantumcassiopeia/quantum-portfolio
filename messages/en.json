@@ -1,4 +1,9 @@
 {
+  "Metadata": {
+    "title": "Quantum Solutions | Modern Websites with SEO, Speed, and Responsive Design",
+    "description": "Welcome to Quantum Solutions. We transform your online presence into a competitive advantage through fast, intuitive, and scalable websites. Our solutions combine cutting-edge technology, strategic SEO, and responsive design to deliver real results for your business."
+  },
+
   "Homepage": {
     "title": "Welcome to Quantum.",
     "subtitle": "Innovative solutions for your business.",
@@ -12,6 +17,11 @@
   },
 
   "AboutUsPage": {
+    "Metadata": {
+      "title": "About Quantum Solutions | Custom Modern Website Development",
+      "description": "Discover Quantum Solutions, founded by Robert Souza in 2025, specializing in modern, responsive websites with a focus on user experience. We create custom digital solutions that combine design, performance, and usability—representing each client with precision, quality, and attention to detail."
+    },
+
     "title": "About Quantum Solutions",
     "paragraph1": {
       "beforeLink": "Quantum is a company founded in 2025 by",
@@ -22,6 +32,10 @@
   },
 
   "ContactPage": {
+    "Metadata": {
+      "title": "Contact Quantum Solutions | Request Quotes and Get Support",
+      "description": "Reach out to the Quantum Solutions team for quotes, inquiries, feedback, or suggestions. Use our contact form or available support channels at the footer. Quick, transparent, and reliable assistance tailored to your needs."
+    },
     "title": "Contact",
     "paragraph": "Quotes, questions, compliments, or suggestions? Leave your message in the form below or reach out through one of our support channels in the page footer."
   },

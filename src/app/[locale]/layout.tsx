@@ -1,6 +1,4 @@
 // General
-import type { Metadata } from "next";
-
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -17,6 +15,8 @@ import "./globals.css";
 import Footer from "@/layout/Footer";
 import Header from "@/layout/Header";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
+import { Locale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const switzerDefault = localFont({
   src: "../../../public/fonts/switzer/Switzer-Medium.woff2",
@@ -27,11 +27,23 @@ const jetBrainsMono = JetBrains_Mono({
   variable: "--jetbrains-mono",
 });
 
-export const metadata: Metadata = {
-  title: "Quantum Solutions",
-  description:
-    "Discover solutions in UX, branding, and digital presence. Explore real-world responsive design projects focused on performance and conversion.",
+type Props = {
+  params: {
+    locale: Locale;
+  };
 };
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function RootLayout({
   children,
