@@ -27,13 +27,12 @@ const jetBrainsMono = JetBrains_Mono({
   variable: "--jetbrains-mono",
 });
 
-type Props = {
-  params: {
-    locale: Locale;
-  };
-};
-
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations({
     locale,
     namespace: "Metadata",

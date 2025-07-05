@@ -5,13 +5,12 @@ import { Locale } from "next-intl";
 import AnimatedLottie from "@/components/AnimatedLottie";
 import Form from "@/components/Form";
 
-type Props = {
-  params: {
-    locale: Locale;
-  };
-};
-
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations({
     locale,
     namespace: "ContactPage.Metadata",

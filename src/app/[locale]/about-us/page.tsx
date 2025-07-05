@@ -3,13 +3,12 @@ import { getTranslations } from "next-intl/server";
 import AnimatedLottie from "@/components/AnimatedLottie";
 import { FadeInY } from "@/components/Animations";
 
-type Props = {
-  params: {
-    locale: Locale;
-  };
-};
-
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations({
     locale,
     namespace: "AboutUsPage.Metadata",
