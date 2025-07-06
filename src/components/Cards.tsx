@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import AnimatedLottie from "./AnimatedLottie";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export function AdvantageCard({
@@ -50,6 +51,7 @@ export function CaseCard({
             className="object-cover"
           />
         </div>
+        <OpenInNewIcon className="absolute top-9 right-3 text-[var(--bg-color)] bg-[var(--bg-color-invert)]/20" />
         <h3 className="absolute opacity-80 shadow-[var(--shadow)] top-8 bg-[var(--bg-color)] text-[1rem] rounded-r-4xl p-1.5 ">
           {title}
         </h3>
