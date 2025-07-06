@@ -41,6 +41,12 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: {
+      canonical:
+        locale === "en"
+          ? "https://qcsolutions.tech/"
+          : `https://qcsolutions.tech/${locale}`,
+    },
   };
 }
 
