@@ -25,6 +25,7 @@ export default function LocaleSwitcher() {
       >
         <button
           onClick={() => handleLocaleChange("en")}
+          onTouchStart={() => handleLocaleChange("en")}
           className={`cursor-pointer w-full text-start focus:outline-none focus-visible:ring focus-visible:ring-blue-400 ${
             params.locale === "en" ? "font-bold" : ""
           }`}
@@ -33,6 +34,7 @@ export default function LocaleSwitcher() {
         </button>
         <button
           onClick={() => handleLocaleChange("pt-BR")}
+          onTouchCancel={() => handleLocaleChange("pt-BR")}
           className={`cursor-pointer w-full text-start focus:outline-none focus-visible:ring focus-visible:ring-blue-400 ${
             params.locale === "pt-BR" ? "font-bold" : ""
           }`}

@@ -55,14 +55,14 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: Locale }>;
 }>) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   return (
-    <html lang={locale} suppressHydrationWarning={true}>
+    <html lang={locale} key={locale} suppressHydrationWarning={true}>
       <body
         className={`${switzerDefault.className} ${jetBrainsMono.variable} antialiased relative flex flex-col overflow-x-clip h-screen max-w-screen-2xl mx-auto md:text-[1.125rem]`}
       >
