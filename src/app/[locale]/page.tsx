@@ -6,6 +6,7 @@ import { FadeInY } from "@/components/Animations";
 
 export default function Home() {
   const t = useTranslations("Homepage");
+
   const caseCards = useTranslations("Cards").raw("caseCards") as {
     title: string;
     summary: string;

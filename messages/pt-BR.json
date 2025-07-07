@@ -31,6 +31,20 @@
     "paragraph3": "Saiba mais sobre o criador da Quantum acessando o currículo disponível nas versões"
   },
 
+  "CasesPage": {
+    "Metadata": {
+      "title": "Cases Criativos | Projetos Personalizados da Quantum Soluções",
+      "description": "Explore os cases criativos da Quantum Soluções, com projetos exclusivos desenvolvidos para clientes que buscavam inovação, performance e identidade digital. Cada site criado é um exemplo de como transformamos ideias em experiências digitais impactantes."
+    },
+
+    "title": "Cases Criativos",
+    "paragraph1": "Na Quantum Soluções, cada projeto é uma expressão única de criatividade, tecnologia e atenção aos detalhes. Nossa seção de Cases Criativos reúne sites desenvolvidos sob medida, com foco em",
+    "paragraph1Strong": "design responsivo, SEO estratégico, rapidez de carregamento e experiência do usuário.",
+    "paragraph2": "Os projetos que entregamos se adaptam perfeitamente a diferentes dispositivos, valorizam a identidade de cada cliente e são construídos para gerar resultados reais. Explore exemplos de soluções digitais que transformaram ideias em presença online marcante.",
+    "paragraph3Strong": "Quer um site que combine inovação, estética e desempenho?",
+    "paragraph3": "Inspire-se nos nossos cases e descubra como podemos elevar sua marca ao próximo nível."
+  },
+
   "ContactPage": {
     "Metadata": {
       "title": "Fale com a Quantum Soluções | Solicite Orçamentos e Tire Dúvidas",
@@ -253,5 +267,9 @@
     "subtitle": "Pagina não encontrada",
     "paragraph": "Ei, você não deveria estar aqui! Clique no botão abaixo para voltar à página inicial.",
     "button": "Página inicial"
+  },
+
+  "OtherButtons": {
+    "allCases": "Todos os Cases"
   }
 }

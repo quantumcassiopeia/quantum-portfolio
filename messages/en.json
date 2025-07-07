@@ -31,6 +31,20 @@
     "paragraph3": "Learn more about the creator of Quantum by accessing the resume available in the versions"
   },
 
+  "CasesPage": {
+    "Metadata": {
+      "title": "Creative Cases | Custom Projects by Quantum Solutions",
+      "description": "Browse the creative cases from Quantum Solutions, featuring custom projects built for clients seeking innovation, performance, and digital identity. Each website is a showcase of how we turn ideas into powerful online experiences."
+    },
+
+    "title": "Creative Cases",
+    "paragraph1": "At Quantum Solutions, every project is a unique expression of creativity, technology, and attention to detail. Our Creative Cases section showcases custom websites crafted with a focus on",
+    "paragraph1Strong": "responsive design, strategic SEO, fast loading speed, and user experience.",
+    "paragraph2": "The projects we deliver adapt seamlessly to different devices, enhance each client's brand identity, and are built to generate real results. Explore examples of digital solutions that transformed ideas into a striking online presence.",
+    "paragraph3Strong": "Looking for a website that combines innovation, aesthetics, and performance?",
+    "paragraph3": "Get inspired by our creative cases and discover how we can elevate your brand to the next level."
+  },
+
   "ContactPage": {
     "Metadata": {
       "title": "Contact Quantum Solutions | Request Quotes and Get Support",
@@ -254,5 +268,9 @@
     "subtitle": "Page not found",
     "paragraph": "Hey, you shouldn't be here! Click the button below to go back to the homepage.",
     "button": "Homepage"
+  },
+
+  "OtherButtons": {
+    "allCases": "All cases"
   }
 }

@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import CheckIcon from "../../../../../public/icons/check.svg";
 import { FadeInSide, FadeInY } from "@/components/Animations";
+import Button from "@/components/Button";
 
 export default async function CasesLayout({
   params,
@@ -23,6 +24,8 @@ export default async function CasesLayout({
   } catch {
     return notFound();
   }
+
+  const buttons = await getTranslations("OtherButtons");
 
   const t = await getTranslations(`CasesData.${slug}`);
   const tags = t.raw("tags") as string[];
@@ -96,11 +99,14 @@ export default async function CasesLayout({
 
       {/* resume section */}
 
-      <section className="max-w-3xl mx-auto px-2">
+      <section className="flex flex-col max-w-3xl mx-auto px-2">
         <FadeInSide>
           <div className="w-40 h-2 bg-multicolor rounded-full mb-5" />
           <p>{t("resume")}</p>
         </FadeInSide>
+        <Button as="a" href="/cases" className="mt-10 inline-block">
+          {buttons("allCases")}
+        </Button>
       </section>
     </div>
   );

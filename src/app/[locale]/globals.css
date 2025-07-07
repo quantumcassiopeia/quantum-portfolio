@@ -81,7 +81,6 @@ h6,
 }
 
 .text-rainbow-gradient {
-  display: inline-block;
   background: linear-gradient(155deg, #9925ff, #ff85ae, #ff7d03);
   background-size: 200%;
   background-position: left;

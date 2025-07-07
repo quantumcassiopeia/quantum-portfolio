@@ -28,7 +28,7 @@ export default function AboutUsPage() {
       <section className="flex flex-col items-center">
         <AnimatedLottie src="/animations/team.json" />
         <h1 className="text-3xl font-bold mb-8 text-center ">{t("title")}</h1>
-        <FadeInY>
+        <FadeInY className="space-y-4">
           <p className="leading-8 md:text-justify">
             {t("paragraph1.beforeLink")}{" "}
             <a
@@ -40,9 +40,7 @@ export default function AboutUsPage() {
             </a>
             {t("paragraph1.afterLink")}
           </p>
-          <br />
           <p className="leading-8 md:text-justify">{t("paragraph2")}</p>
-          <br />
           <p className="leading-8 md:text-justify">
             {t("paragraph3")}{" "}
             <a
@@ -64,8 +62,6 @@ export default function AboutUsPage() {
           </p>
         </FadeInY>
       </section>
-
-      <section></section>
     </div>
   );
 }
